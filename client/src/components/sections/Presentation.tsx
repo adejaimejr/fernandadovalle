@@ -16,19 +16,25 @@ export function Presentation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-1/2 relative flex justify-center md:justify-end"
+            className="w-full md:w-1/2 relative flex justify-center md:justify-end pr-0 md:pr-12"
           >
-            <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/images/fernanda-seated-black.jpg" 
                 alt="Fernanda do Valle Pessoa"
                 className="w-full h-full object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+              
+              {/* Text Overlay restored */}
+              <div className="absolute bottom-8 left-8 text-white max-w-[90%]">
+                <p className="font-script text-3xl md:text-4xl mb-2 text-[#F5C518]">Fernanda do Valle</p>
+                <p className="text-xs md:text-sm font-light uppercase tracking-[0.2em] opacity-90">Psicóloga & Escritora</p>
+              </div>
             </div>
             
-            {/* Decorative Elements - Simplified for Harmony */}
-            <div className="absolute -z-10 bottom-6 -left-6 w-full h-full border border-[#DAC8BA]/50 rounded-2xl hidden md:block translate-y-8 translate-x-8" />
+            {/* Decorative Elements - Restored stronger border */}
+            <div className="absolute -z-10 top-8 -left-8 w-full h-full border-2 border-[#DAC8BA] rounded-2xl hidden md:block" />
           </motion.div>
 
           {/* Text Side */}
