@@ -42,14 +42,6 @@ export function Footer() {
           
           {/* Brand & Photo - Col 1 (3 cols) */}
           <div className="md:col-span-3 space-y-6">
-             <div className="h-12 w-auto overflow-hidden">
-               <img 
-                 src="/images/fernanda-logo-turquesa.jpg" 
-                 alt="fv Fernanda do Valle" 
-                 className="h-full w-auto object-contain rounded-md"
-               />
-            </div>
-            
             <div className="relative w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
                 <img 
                     src="/images/fernanda-footer.jpg" 
@@ -68,8 +60,8 @@ export function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-[#6FB4B4]">Contato</h4>
             <ul className="space-y-4 text-sm">
                 <li className="flex items-center space-x-3 hover:text-[#6FB4B4] transition-colors cursor-pointer group">
-                   <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#25D366]/20 transition-colors">
-                    <WhatsAppLogo className="text-[#25D366]" size={18} />
+                   <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
+                    <WhatsAppLogo size={18} />
                   </div>
                   <div className="flex flex-col">
                       <span className="text-xs text-white/40 uppercase">WhatsApp</span>
@@ -95,14 +87,6 @@ export function Footer() {
                   </div>
                 </li>
               </ul>
-              
-              <div className="pt-4">
-                 <div className="p-4 rounded-lg bg-white/5 border border-white/10">
-                    <p className="text-xs text-white/50 uppercase tracking-wider mb-1">Psicóloga Responsável</p>
-                    <p className="font-display text-base text-white mb-1">Fernanda do Valle Pessoa</p>
-                    <p className="text-sm font-mono text-[#6FB4B4]">CRP 20/03477</p>
-                </div>
-              </div>
           </div>
 
           {/* Location & Map - Col 3 (6 cols) */}
