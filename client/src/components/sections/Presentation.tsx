@@ -39,7 +39,6 @@ export function Presentation() {
                 <div className="absolute bottom-8 left-8 max-w-[90%]">
                   <p className="font-script text-4xl md:text-5xl mb-3 text-white drop-shadow-md">Fernanda do Valle</p>
                   <div className="flex items-center gap-3">
-                    <div className="h-[1px] w-12 bg-white/70 shadow-sm" />
                     <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-white/90 drop-shadow-sm">Psicóloga & Escritora</p>
                   </div>
                 </div>
@@ -53,7 +52,7 @@ export function Presentation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-1/2 space-y-8 pl-0 md:pl-12"
+            className="w-full md:w-1/2 space-y-6 md:space-y-8 pl-0 md:pl-12"
           >
             <div>
               <h2 className="text-4xl lg:text-5xl font-display text-primary mb-6">
@@ -73,7 +72,7 @@ export function Presentation() {
                 "Oferecer um cuidado que respeite o tempo e a singularidade de cada história."
               </blockquote>
               <p>
-                Clínica, Instituto e obras não são frentes isoladas — são camadas integradas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.
+                Clínica, Instituto e obras não são frentes isoladas, são camadas integradas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.
               </p>
             </div>
 
