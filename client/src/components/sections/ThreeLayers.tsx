@@ -38,7 +38,7 @@ export function ThreeLayers() {
       subtitle: "Leitura e Reflexão",
       description: "A escrita como gesto de cuidado. Obras que traduzem conceitos complexos da psicologia para uma linguagem acessível, permitindo que a informação de qualidade chegue a mais pessoas.",
       cta: "Explorar Obras",
-      image: "/images/books-leaning.jpg",
+      image: "/images/fernanda-books-leaning.jpg",
       color: "bg-[#6A7C67]",
       textColor: "text-[#6A7C67]",
       borderColor: "border-[#6A7C67]",
