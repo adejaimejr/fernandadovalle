@@ -67,11 +67,12 @@ export function ThreeLayers() {
           {layers.map((layer, index) => (
             <motion.div
               key={layer.id}
+              id={layer.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col"
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col scroll-mt-32"
             >
               {/* Image Header */}
               <div className={cn("h-72 overflow-hidden relative shrink-0", layer.isLogo ? "bg-[#FFC60B]" : "")}>

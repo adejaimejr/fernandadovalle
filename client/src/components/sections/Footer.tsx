@@ -89,7 +89,7 @@ export function Footer() {
                   </div>
                 </li>
 
-                <li className="flex items-start space-x-3 group mt-6 pt-6 border-t border-white/5">
+                <li className="flex items-start space-x-3 group mt-3 pt-3 border-t border-white/5">
                    <div className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors mt-0.5">
                     <Clock size={16} />
                   </div>
