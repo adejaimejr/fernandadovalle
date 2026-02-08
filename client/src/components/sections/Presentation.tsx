@@ -18,23 +18,34 @@ export function Presentation() {
             transition={{ duration: 0.8 }}
             className="w-full md:w-1/2 relative flex justify-center md:justify-end pr-0 md:pr-12"
           >
-            <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/images/fernanda-seated-black.jpg" 
-                alt="Fernanda do Valle Pessoa"
-                className="w-full h-full object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+            {/* Structural Elements for "Harmony" */}
+            <div className="relative w-full max-w-md">
               
-              {/* Text Overlay restored */}
-              <div className="absolute bottom-8 left-8 text-white max-w-[90%]">
-                <p className="font-script text-3xl md:text-4xl mb-2 text-[#F5C518]">Fernanda do Valle</p>
-                <p className="text-xs md:text-sm font-light uppercase tracking-[0.2em] opacity-90">Psicóloga & Escritora</p>
+              {/* 1. The Decorative Lines (Restored & Tightened) */}
+              <div className="absolute -z-10 top-4 -left-4 w-full h-full border-[1.5px] border-[#6FB4B4] rounded-[2rem] hidden md:block" />
+              <div className="absolute -z-20 top-8 -left-8 w-full h-full bg-[#F5C518]/10 rounded-[2rem] hidden md:block" />
+
+              {/* 2. The Main Image Container */}
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl bg-white">
+                <img 
+                  src="/images/fernanda-seated-black.jpg" 
+                  alt="Fernanda do Valle Pessoa"
+                  className="w-full h-full object-cover object-top"
+                />
+                
+                {/* 3. Refined Overlay - White Gradient for Bright Photo */}
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent opacity-100" />
+                
+                {/* 4. Elegant Text - Dark on Light */}
+                <div className="absolute bottom-8 left-8 max-w-[90%]">
+                  <p className="font-script text-4xl md:text-5xl mb-2 text-[#6FB4B4]">Fernanda do Valle</p>
+                  <div className="flex items-center gap-3">
+                    <div className="h-[1px] w-8 bg-[#F5C518]" />
+                    <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">Psicóloga & Escritora</p>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            {/* Decorative Elements - Restored stronger border */}
-            <div className="absolute -z-10 top-8 -left-8 w-full h-full border-2 border-[#DAC8BA] rounded-2xl hidden md:block" />
           </motion.div>
 
           {/* Text Side */}
