@@ -10,7 +10,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[#FFFAFA] overflow-hidden pt-32 md:pt-40">
+    <section className="relative min-h-screen flex items-center bg-[#FFFAFA] overflow-hidden pt-24 md:pt-28">
       {/* Background Texture */}
       <div 
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center mix-blend-multiply pointer-events-none"
