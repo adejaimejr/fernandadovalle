@@ -41,18 +41,20 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           
           {/* Brand & Photo - Col 1 (3 cols) */}
-          <div className="md:col-span-3 space-y-6 hidden md:block">
-            <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
-                <img 
-                    src="/images/fernanda-footer.jpg" 
-                    alt="Fernanda do Valle" 
-                    className="w-full h-full object-cover"
-                />
-            </div>
+          <div className="md:col-span-3 hidden md:flex flex-col justify-between h-full">
+            <div className="space-y-6">
+              <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
+                  <img 
+                      src="/images/fernanda-footer.jpg" 
+                      alt="Fernanda do Valle" 
+                      className="w-full h-full object-cover"
+                  />
+              </div>
 
-            <p className="text-sm text-white/60 font-light tracking-wide pt-2 max-w-xs leading-relaxed">
-              Psicologia sob medida. Um olhar ético, científico e humano para cada necessidade.
-            </p>
+              <p className="text-sm text-white/60 font-light tracking-wide pt-2 max-w-xs leading-relaxed">
+                Psicologia sob medida. Um olhar ético, científico e humano para cada necessidade.
+              </p>
+            </div>
           </div>
 
           {/* Contact - Col 2 (3 cols) */}
@@ -93,8 +95,8 @@ export function Footer() {
                   </div>
                   <div className="flex flex-col text-sm text-white/80">
                       <span className="text-xs text-white/40 uppercase mb-1">Horário de Atendimento</span>
-                      <span>Seg - Sex: 08:30h às 20h</span>
-                      <span>Sáb: 08:30h às 14h</span>
+                      <span>Seg - Sex: 09:00h às 18h</span>
+                      <span>Sáb: 09:00h às 14h</span>
                   </div>
                 </li>
               </ul>

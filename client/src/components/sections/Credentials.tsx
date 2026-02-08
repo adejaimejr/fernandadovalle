@@ -31,7 +31,7 @@ export function Credentials() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Intro Column */}
-          <div className="lg:w-1/3 space-y-8 sticky top-24">
+          <div className="lg:w-1/3 space-y-8 lg:sticky lg:top-24 h-fit">
             <div>
               <span className="text-xs font-bold tracking-[0.2em] text-[#D4A500] uppercase mb-3 block">
                 Formação e Certificações
