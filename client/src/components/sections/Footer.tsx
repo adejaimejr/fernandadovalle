@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin, Clock } from "lucide-react";
 
 // Custom WhatsApp Icon Component
 const WhatsAppIcon = ({ size = 24, className }: { size?: number, className?: string }) => (
@@ -36,7 +36,7 @@ const WhatsAppLogo = ({ size = 15, className }: { size?: number, className?: str
 
 export function Footer() {
   return (
-    <footer id="contato" className="bg-[#2C2C2C] text-white/90 pt-16 pb-8 border-t-4 border-[#6FB4B4]">
+    <footer id="contato" className="bg-[#2C2C2C] text-white/90 pt-8 md:pt-16 pb-8 border-t-4 border-[#6FB4B4]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           
@@ -78,12 +78,23 @@ export function Footer() {
                   </div>
                 </li>
                 <li className="flex items-center space-x-3 hover:text-[#6FB4B4] transition-colors cursor-pointer group">
-                   <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
+                   <div className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
                     <Instagram size={16} />
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col overflow-hidden">
                       <span className="text-xs text-white/40 uppercase">Instagram</span>
-                      <span>@fernandadovallepessoa2</span>
+                      <span className="truncate text-sm">@fernandadovallepessoa2</span>
+                  </div>
+                </li>
+
+                <li className="flex items-start space-x-3 group mt-6 pt-6 border-t border-white/5">
+                   <div className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors mt-0.5">
+                    <Clock size={16} />
+                  </div>
+                  <div className="flex flex-col text-sm text-white/80">
+                      <span className="text-xs text-white/40 uppercase mb-1">Horário de Atendimento</span>
+                      <span>Seg - Sex: 08:30h às 20h</span>
+                      <span>Sáb: 08:30h às 14h</span>
                   </div>
                 </li>
               </ul>
@@ -122,7 +133,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40">
-          <p>&copy; 2026 Fernanda do Valle Pessoa. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Fernanda do Valle Pessoa.</p>
           <div className="mt-4 md:mt-0">
              <div className="flex items-center gap-1.5 opacity-70 hover:opacity-100 transition-opacity">
                 <span>Criado com</span>
