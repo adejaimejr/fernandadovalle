@@ -1,57 +1,77 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { motion } from "framer-motion";
 
 export function Presentation() {
   return (
-    <section id="sobre" className="py-20 md:py-32 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+    <section id="sobre" className="py-24 bg-[#F8F6F3] relative overflow-hidden">
+      {/* Background Decor */}
+      <div className="absolute right-0 top-1/4 w-1/3 h-full bg-[#E8BBA3]/5 rounded-l-full blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
           
-          {/* Image Side */}
-          <div className="relative group animate-in slide-in-from-left-10 duration-1000 order-first md:order-last">
-            <div className="absolute -inset-4 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500" />
-            <div className="relative rounded-full overflow-hidden border-4 border-white shadow-2xl max-w-md mx-auto aspect-square">
+          {/* Image Side - Refined */}
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="w-full md:w-5/12 relative"
+          >
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="/images/portrait-smiling.jpg" 
-                alt="Fernanda do Valle Pessoa, psicóloga clínica"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="/images/reading-side.jpg" 
+                alt="Fernanda do Valle Pessoa lendo"
+                className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              
+              <div className="absolute bottom-6 left-6 text-white max-w-[80%]">
+                <p className="font-script text-3xl mb-1">Fernanda do Valle</p>
+                <p className="text-xs font-light uppercase tracking-widest opacity-90">Psicóloga & Escritora</p>
+              </div>
             </div>
-          </div>
+            
+            {/* Decorative Offset Border */}
+            <div className="absolute -z-10 top-6 -left-6 w-full h-full border-2 border-[#DAC8BA] rounded-2xl hidden md:block" />
+          </motion.div>
 
           {/* Text Side */}
-          <div className="space-y-6 text-center md:text-left animate-in slide-in-from-right-10 duration-1000">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary">
-              Fernanda do Valle Pessoa
-            </h2>
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="w-full md:w-7/12 space-y-8"
+          >
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-display text-primary mb-4">
+                Sobre Fernanda
+              </h2>
+              <div className="w-20 h-1 bg-[#6FB4B4] rounded-full" />
+            </div>
             
-            <p className="font-sans text-sm md:text-base font-semibold text-muted-foreground uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
-              Psicóloga clínica (CRP 20/03477)
-            </p>
-            
-            <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-light">
               <p>
-                Psicóloga clínica, escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas.
+                <strong className="text-primary font-medium">Psicóloga clínica (CRP 20/03477)</strong>, escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas. Mas, para além dos títulos, Fernanda é uma profissional que acredita profundamente na escuta.
               </p>
               <p>
-                Fernanda do Valle é a psicóloga responsável pelos atendimentos da clínica, a fundadora e idealizadora dos protocolos do Instituto e autora de livros em saúde mental.
+                Fundamentada em evidências científicas e com formações internacionais, ela construiu uma prática que não separa a técnica da humanidade. Seja no consultório, na idealização de projetos educacionais ou na escrita de seus livros, o propósito é sempre o mesmo:
               </p>
-              <p className="font-medium text-primary/80">
-                Clínica, Instituto e obras não são frentes isoladas — são camadas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.
+              <blockquote className="border-l-4 border-[#F5C518] pl-6 py-2 my-6 text-xl font-display text-secondary-foreground italic bg-white/50 rounded-r-lg">
+                "Oferecer um cuidado que respeite o tempo e a singularidade de cada história."
+              </blockquote>
+              <p>
+                Clínica, Instituto e obras não são frentes isoladas — são camadas integradas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.
               </p>
             </div>
 
-            <div className="pt-4 flex justify-center md:justify-start">
-               {/* Using image signature/logo element instead of text font */}
-               <div className="h-16 w-auto opacity-80">
-                  <img 
-                    src="/images/fernanda-logo-turquesa.jpg" 
-                    alt="Fernanda do Valle" 
-                    className="h-full w-auto object-contain mix-blend-multiply" 
-                    style={{ objectPosition: 'left' }}
-                  />
-               </div>
+            <div className="pt-4 flex flex-wrap gap-4">
+              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Terapia Cognitivo-Comportamental</span>
+              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Psicologia Positiva (UPenn)</span>
+              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Resiliência (Harvard)</span>
             </div>
-          </div>
+          </motion.div>
           
         </div>
       </div>
