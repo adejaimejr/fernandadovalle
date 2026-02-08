@@ -41,8 +41,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           
           {/* Brand & Photo - Col 1 (3 cols) */}
-          <div className="md:col-span-3 space-y-6">
-            <div className="relative w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
+          <div className="md:col-span-3 space-y-6 hidden md:block">
+            <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
                 <img 
                     src="/images/fernanda-footer.jpg" 
                     alt="Fernanda do Valle" 
@@ -101,7 +101,7 @@ export function Footer() {
 
              <div className="space-y-4">
                 <p className="text-white/80 text-sm leading-relaxed">
-                  Avenida Jacira Reis, 5051 - Manaus - AM <span className="text-white/40 mx-2">|</span> CEP 69033-008
+                  Av. Jacira Reis, 5051 - Dom Pedro, Manaus - AM, 69033-008, Brasil
                 </p>
                 
                 <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-white/5 transition-all duration-500 hover:border-[#6FB4B4]/50">
