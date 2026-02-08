@@ -45,7 +45,7 @@ export function Footer() {
             <div className="space-y-6">
               <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
                   <img 
-                      src="/images/fernanda-footer.jpg" 
+                      src="/images/fernanda-footer.webp" 
                       alt="Fernanda do Valle" 
                       className="w-full h-full object-cover"
                   />

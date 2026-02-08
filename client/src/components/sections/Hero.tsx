@@ -14,7 +14,7 @@ export function Hero() {
       {/* Background Texture */}
       <div 
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center mix-blend-multiply pointer-events-none"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
       />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -75,9 +75,11 @@ export function Hero() {
               {/* Main Image Container */}
               <div className="relative h-full w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <img 
-                  src="/images/hero-seated.jpg" 
+                  src="/images/hero-seated.webp" 
                   alt="Fernanda do Valle Pessoa sentada confortavelmente" 
                   className="w-full h-full object-cover object-top"
+                  // @ts-ignore - React types might not include fetchPriority yet
+                  fetchPriority="high"
                 />
                 
                 {/* Floating Badge */}

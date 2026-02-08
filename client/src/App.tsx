@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import { useDelayedPreload } from "./hooks/use-delayed-preload";
 
 function Router() {
   return (
@@ -16,6 +17,9 @@ function Router() {
 }
 
 function App() {
+  // Activate delayed preload of below-the-fold images
+  useDelayedPreload();
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
