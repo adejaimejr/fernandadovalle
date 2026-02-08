@@ -16,24 +16,19 @@ export function Presentation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-5/12 relative"
+            className="w-full md:w-1/2 relative flex justify-center md:justify-end"
           >
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="/images/reading-side.jpg" 
-                alt="Fernanda do Valle Pessoa lendo"
-                className="w-full h-full object-cover"
+                src="/images/fernanda-seated-black.jpg" 
+                alt="Fernanda do Valle Pessoa"
+                className="w-full h-full object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              
-              <div className="absolute bottom-6 left-6 text-white max-w-[80%]">
-                <p className="font-script text-3xl mb-1">Fernanda do Valle</p>
-                <p className="text-xs font-light uppercase tracking-widest opacity-90">Psicóloga & Escritora</p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60" />
             </div>
             
-            {/* Decorative Offset Border */}
-            <div className="absolute -z-10 top-6 -left-6 w-full h-full border-2 border-[#DAC8BA] rounded-2xl hidden md:block" />
+            {/* Decorative Elements - Simplified for Harmony */}
+            <div className="absolute -z-10 bottom-6 -left-6 w-full h-full border border-[#DAC8BA]/50 rounded-2xl hidden md:block translate-y-8 translate-x-8" />
           </motion.div>
 
           {/* Text Side */}
@@ -42,13 +37,13 @@ export function Presentation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-7/12 space-y-8"
+            className="w-full md:w-1/2 space-y-8 pl-0 md:pl-12"
           >
             <div>
-              <h2 className="text-4xl lg:text-5xl font-display text-primary mb-4">
+              <h2 className="text-4xl lg:text-5xl font-display text-primary mb-6">
                 Sobre Fernanda
               </h2>
-              <div className="w-20 h-1 bg-[#6FB4B4] rounded-full" />
+              <div className="w-16 h-1 bg-[#6FB4B4] rounded-full" />
             </div>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-light">
@@ -58,7 +53,7 @@ export function Presentation() {
               <p>
                 Fundamentada em evidências científicas e com formações internacionais, ela construiu uma prática que não separa a técnica da humanidade. Seja no consultório, na idealização de projetos educacionais ou na escrita de seus livros, o propósito é sempre o mesmo:
               </p>
-              <blockquote className="border-l-4 border-[#F5C518] pl-6 py-2 my-6 text-xl font-display text-secondary-foreground italic bg-white/50 rounded-r-lg">
+              <blockquote className="border-l-4 border-[#F5C518] pl-6 py-2 my-8 text-xl font-display text-secondary-foreground italic bg-transparent">
                 "Oferecer um cuidado que respeite o tempo e a singularidade de cada história."
               </blockquote>
               <p>
@@ -66,10 +61,10 @@ export function Presentation() {
               </p>
             </div>
 
-            <div className="pt-4 flex flex-wrap gap-4">
-              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Terapia Cognitivo-Comportamental</span>
-              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Psicologia Positiva (UPenn)</span>
-              <span className="bg-white px-4 py-2 rounded-full text-sm text-[#8C7B75] shadow-sm border border-[#8C7B75]/20">Resiliência (Harvard)</span>
+            <div className="pt-6 flex flex-wrap gap-3">
+              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Terapia Cognitivo-Comportamental</span>
+              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Psicologia Positiva (UPenn)</span>
+              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Resiliência (Harvard)</span>
             </div>
           </motion.div>
           
