@@ -21,13 +21,13 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-20 items-center">
           
           {/* Text Content */}
-          <div className="order-2 lg:order-1 space-y-4 md:space-y-8 text-center lg:text-left pt-4 md:pt-0">
+          <div className="order-2 lg:order-1 space-y-4 md:space-y-8 text-center lg:text-left pt-2 md:pt-0">
             
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-3 md:space-y-6"
+              className="space-y-2 md:space-y-6"
             >
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-display text-primary leading-[1.1]">
                 Psicologia <br className="hidden lg:block" />
@@ -43,17 +43,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start pb-8 md:pb-0"
+              className="flex flex-col xs:flex-row gap-2 md:gap-4 justify-center lg:justify-start pb-4 md:pb-0"
             >
               <Button 
                 onClick={() => scrollToSection("clinica")}
-                className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-6 py-6 text-sm md:text-base shadow-lg hover:shadow-primary/20 transition-all duration-300 w-full sm:w-auto"
+                className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-primary/20 transition-all duration-300 w-full xs:w-auto"
               >
                 Agendar Conversa
               </Button>
               <Button 
                 onClick={() => scrollToSection("instituto")}
-                className="bg-[#F5C518] hover:bg-[#D4A500] text-secondary-foreground rounded-full px-6 py-6 text-sm md:text-base shadow-lg hover:shadow-secondary/20 transition-all duration-300 w-full sm:w-auto"
+                className="bg-[#F5C518] hover:bg-[#D4A500] text-secondary-foreground rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-secondary/20 transition-all duration-300 w-full xs:w-auto"
               >
                 Conhecer o Instituto
               </Button>
@@ -67,7 +67,7 @@ export function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="order-1 lg:order-2 relative px-0 md:px-0 w-full"
           >
-            <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] max-w-[340px] md:max-w-lg mx-auto lg:ml-auto">
+            <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] max-w-[280px] sm:max-w-[340px] md:max-w-lg mx-auto lg:ml-auto">
               {/* Organic Shapes Behind */}
               <div className="absolute top-4 right-4 md:top-6 md:right-6 w-full h-full bg-[#6FB4B4]/10 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] animate-blob mix-blend-multiply filter blur-xl" />
               <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-3/4 h-3/4 bg-[#F5C518]/10 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-blob animation-delay-2000 mix-blend-multiply filter blur-xl" />
