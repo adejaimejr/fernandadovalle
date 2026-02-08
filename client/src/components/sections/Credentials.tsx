@@ -26,7 +26,7 @@ export function Credentials() {
   ];
 
   return (
-    <section id="formacao" className="py-24 bg-[#FAF9F6]">
+    <section id="formacao" className="pt-24 pb-0 bg-[#FAF9F6]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
