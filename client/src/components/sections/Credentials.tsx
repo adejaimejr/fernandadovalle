@@ -33,7 +33,7 @@ export function Credentials() {
           {/* Intro Column */}
           <div className="lg:w-1/3 space-y-8 sticky top-24">
             <div>
-              <span className="text-xs font-bold tracking-[0.2em] text-[#6FB4B4] uppercase mb-3 block">
+              <span className="text-xs font-bold tracking-[0.2em] text-[#D4A500] uppercase mb-3 block">
                 Formação e Certificações
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-primary leading-[1.15]">
@@ -50,7 +50,7 @@ export function Credentials() {
               </p>
             </div>
 
-            <div className="h-0.5 w-12 bg-[#6FB4B4]/30" />
+            <div className="h-0.5 w-12 bg-[#F5C518]" />
           </div>
 
           {/* Grid Column */}
@@ -58,12 +58,12 @@ export function Credentials() {
             {credentials.map((cred, index) => (
               <div 
                 key={index}
-                className="group bg-white p-8 rounded-2xl border border-border/40 hover:border-[#6FB4B4]/30 transition-all duration-500 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-12px_rgba(111,180,180,0.2)] hover:-translate-y-1"
+                className="group bg-white p-8 rounded-2xl border border-border/40 hover:border-[#F5C518]/30 transition-all duration-500 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-12px_rgba(245,197,24,0.2)] hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#6FB4B4]/5 text-[#6FB4B4] flex items-center justify-center mb-6 group-hover:bg-[#6FB4B4] group-hover:text-white transition-colors duration-500">
+                <div className="w-12 h-12 rounded-xl bg-[#F5C518]/10 text-[#D4A500] flex items-center justify-center mb-6 group-hover:bg-[#F5C518] group-hover:text-[#333333] transition-colors duration-500">
                   <cred.icon size={22} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl font-display text-primary mb-3 group-hover:text-[#6FB4B4] transition-colors duration-300">
+                <h3 className="text-xl font-display text-primary mb-3 group-hover:text-[#D4A500] transition-colors duration-300">
                   {cred.title}
                 </h3>
                 <p className="text-[15px] text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
