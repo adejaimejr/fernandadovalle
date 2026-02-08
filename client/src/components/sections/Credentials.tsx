@@ -1,4 +1,5 @@
-import { BadgeCheck, GraduationCap, Award, Book } from "lucide-react";
+import { BadgeCheck, GraduationCap, Award, BookOpen } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function Credentials() {
   const credentials = [
@@ -8,7 +9,7 @@ export function Credentials() {
       desc: "Formação voltada à avaliação psicológica, formulação de caso e intervenções clínicas eficazes."
     },
     {
-      icon: Book,
+      icon: BookOpen,
       title: "University of Pennsylvania",
       desc: "Especialização em Psicologia Positiva, com aprofundamento em bem-estar e forças de caráter."
     },
@@ -25,40 +26,47 @@ export function Credentials() {
   ];
 
   return (
-    <section id="formacao" className="py-20 bg-muted/30">
+    <section id="formacao" className="py-24 bg-[#FAF9F6]">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Intro Column */}
-          <div className="lg:w-1/3 space-y-6">
-            <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
-              Formação e Certificações
-            </span>
-            <h2 className="text-3xl md:text-4xl text-primary leading-tight">
-              Prática baseada em ciência e evidências
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Fernanda do Valle Pessoa é psicóloga clínica (CRP 20/03477), com formação sólida e certificações nacionais e internacionais na área da saúde mental.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Sua atuação é fundamentada em práticas baseadas em evidências científicas, com foco na promoção, prevenção e cuidado psicológico personalizado.
-            </p>
+          <div className="lg:w-1/3 space-y-8 sticky top-24">
+            <div>
+              <span className="text-xs font-bold tracking-[0.2em] text-[#6FB4B4] uppercase mb-3 block">
+                Formação e Certificações
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-primary leading-[1.15]">
+                Prática baseada em ciência e evidências
+              </h2>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-muted-foreground leading-relaxed text-base">
+                Fernanda do Valle Pessoa é psicóloga clínica (CRP 20/03477), com formação sólida e certificações nacionais e internacionais na área da saúde mental.
+              </p>
+              <p className="text-muted-foreground leading-relaxed text-base">
+                Sua atuação é fundamentada em práticas baseadas em evidências científicas, com foco na promoção, prevenção e cuidado psicológico personalizado.
+              </p>
+            </div>
+
+            <div className="h-0.5 w-12 bg-[#6FB4B4]/30" />
           </div>
 
           {/* Grid Column */}
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {credentials.map((cred, index) => (
               <div 
                 key={index}
-                className="bg-background p-8 rounded-xl border border-border/50 hover:border-secondary/50 transition-colors duration-300 shadow-sm"
+                className="group bg-white p-8 rounded-2xl border border-border/40 hover:border-[#6FB4B4]/30 transition-all duration-500 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-12px_rgba(111,180,180,0.2)] hover:-translate-y-1"
               >
-                <div className="w-10 h-10 rounded-full bg-secondary/20 text-primary flex items-center justify-center mb-4">
-                  <cred.icon size={20} strokeWidth={1.5} />
+                <div className="w-12 h-12 rounded-xl bg-[#6FB4B4]/5 text-[#6FB4B4] flex items-center justify-center mb-6 group-hover:bg-[#6FB4B4] group-hover:text-white transition-colors duration-500">
+                  <cred.icon size={22} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl font-display text-foreground mb-2">
+                <h3 className="text-xl font-display text-primary mb-3 group-hover:text-[#6FB4B4] transition-colors duration-300">
                   {cred.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-[15px] text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                   {cred.desc}
                 </p>
               </div>
