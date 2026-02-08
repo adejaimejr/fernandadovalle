@@ -73,7 +73,7 @@ export function ThreeLayers() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-48 overflow-hidden relative shrink-0">
+              <div className="h-56 overflow-hidden relative shrink-0">
                 <div className={cn("absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-0 z-10", layer.color)} />
                 <img 
                   src={layer.image} 
@@ -94,16 +94,16 @@ export function ThreeLayers() {
                 <div className={cn("absolute top-0 left-0 w-full h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left", layer.color)} />
                 
                 <h3 className="text-xl font-display text-primary mb-1">{layer.title}</h3>
-                <p className={cn("text-xs font-semibold mb-3", layer.textColor)}>{layer.subtitle}</p>
+                <p className={cn("text-xs font-semibold mb-2", layer.textColor)}>{layer.subtitle}</p>
                 
-                <p className="text-muted-foreground leading-relaxed mb-4 text-sm flex-grow line-clamp-4">
+                <p className="text-muted-foreground leading-relaxed mb-3 text-sm flex-grow line-clamp-4">
                   {layer.description}
                 </p>
 
-                <div className="pt-2 mt-auto border-t border-border/30">
+                <div className="mt-auto">
                    <Button 
                     variant="ghost" 
-                    className={cn("pl-0 hover:bg-transparent text-sm font-semibold group/btn transition-colors h-auto py-2", layer.textColor)}
+                    className={cn("pl-0 hover:bg-transparent text-sm font-bold group/btn transition-colors h-auto py-0 uppercase tracking-wide", layer.textColor)}
                   >
                     {layer.cta} 
                     <ArrowRight className="ml-2 w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-1" />
