@@ -3,7 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Presentation } from "@/components/sections/Presentation";
 import { ThreeLayers } from "@/components/sections/ThreeLayers";
 import { Credentials } from "@/components/sections/Credentials";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+import { Newsletter } from "@/components/sections/Newsletter";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <Presentation />
         <ThreeLayers />
         <Credentials />
-        <FinalCTA />
+        <Newsletter />
       </main>
 
       <Footer />
