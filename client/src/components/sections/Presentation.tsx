@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 export function Presentation() {
   return (
-    <section id="sobre" className="py-24 bg-[#F8F6F3] relative overflow-hidden">
+    <section id="sobre" className="py-16 md:py-24 bg-[#F8F6F3] relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute right-0 top-1/4 w-1/3 h-full bg-[#E8BBA3]/5 rounded-l-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+        <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-24">
           
           {/* Image Side - Refined */}
           <motion.div 
@@ -32,15 +32,15 @@ export function Presentation() {
                   className="w-full h-full object-cover object-top"
                 />
                 
-                {/* 3. Refined Overlay - Subtle Dark Gradient ONLY at bottom for legibility */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 translate-y-[30%]" />
+                {/* 3. Refined Overlay - Subtle Dark Gradient for White Text */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-90 translate-y-[20%]" />
                 
-                {/* 4. Elegant Text - White/Gold on Dark */}
+                {/* 4. Elegant Text - Pure White as requested */}
                 <div className="absolute bottom-8 left-8 max-w-[90%]">
-                  <p className="font-script text-4xl md:text-5xl mb-2 text-[#F5C518]">Fernanda do Valle</p>
+                  <p className="font-script text-4xl md:text-5xl mb-3 text-white drop-shadow-md">Fernanda do Valle</p>
                   <div className="flex items-center gap-3">
-                    <div className="h-[1px] w-8 bg-white/50" />
-                    <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-white/90">Psicóloga & Escritora</p>
+                    <div className="h-[1px] w-12 bg-white/70 shadow-sm" />
+                    <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-white/90 drop-shadow-sm">Psicóloga & Escritora</p>
                   </div>
                 </div>
               </div>
