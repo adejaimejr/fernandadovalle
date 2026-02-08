@@ -10,7 +10,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100svh] flex items-center bg-[#FFFAFA] overflow-hidden pt-20 md:pt-24">
+    <section className="relative min-h-[100svh] flex items-center bg-[#FFFAFA] overflow-hidden pt-20 pb-10 md:py-24">
       {/* Background Texture */}
       <div 
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center mix-blend-multiply pointer-events-none"
@@ -65,15 +65,15 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="order-1 lg:order-2 relative px-4 md:px-0"
+            className="order-1 lg:order-2 relative px-0 md:px-0 w-full"
           >
-            <div className="relative aspect-square lg:aspect-[4/5] max-w-[220px] md:max-w-lg mx-auto lg:ml-auto">
+            <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] max-w-[340px] md:max-w-lg mx-auto lg:ml-auto">
               {/* Organic Shapes Behind */}
               <div className="absolute top-4 right-4 md:top-6 md:right-6 w-full h-full bg-[#6FB4B4]/10 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] animate-blob mix-blend-multiply filter blur-xl" />
               <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-3/4 h-3/4 bg-[#F5C518]/10 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-blob animation-delay-2000 mix-blend-multiply filter blur-xl" />
               
               {/* Main Image Container */}
-              <div className="relative h-full w-full rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+              <div className="relative h-full w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <img 
                   src="/images/hero-seated.jpg" 
                   alt="Fernanda do Valle Pessoa sentada confortavelmente" 
@@ -81,7 +81,7 @@ export function Hero() {
                 />
                 
                 {/* Floating Badge */}
-                <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-white/90 backdrop-blur-sm p-2 md:p-3 rounded-lg md:rounded-xl shadow-lg border border-white/50 max-w-[140px] md:max-w-[200px]">
+                <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/50 max-w-[160px] md:max-w-[200px]">
                   <p className="font-display text-primary text-sm md:text-lg leading-none mb-1">CRP 20/03477</p>
                   <p className="text-[10px] md:text-xs text-muted-foreground uppercase tracking-wider font-medium">Psicóloga Clínica</p>
                 </div>
