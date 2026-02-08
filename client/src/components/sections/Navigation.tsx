@@ -24,15 +24,16 @@ export function Navigation() {
   };
 
   const navLinks = [
-    { name: "Sobre", id: "formacao" },
+    { name: "Sobre", id: "sobre" },
     {
       name: "Psicologia sob medida",
       children: [
-        { name: "Clínica", id: "clinica" },
-        { name: "Instituto", id: "instituto" },
-        { name: "Obras", id: "obras" },
+        { name: "Clínica", id: "camadas" },
+        { name: "Instituto", id: "camadas" },
+        { name: "Obras", id: "camadas" },
       ]
     },
+    { name: "Formação", id: "formacao" },
     { name: "Contato", id: "contato" },
   ];
 

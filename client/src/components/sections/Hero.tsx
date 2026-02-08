@@ -10,7 +10,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100svh] flex items-center bg-[#FFFAFA] overflow-hidden pt-20 pb-10 md:py-24">
+    <section id="sobre" className="relative min-h-[100svh] flex items-center bg-[#FFFAFA] overflow-hidden pt-20 pb-10 md:py-24">
       {/* Background Texture */}
       <div 
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center mix-blend-multiply pointer-events-none"

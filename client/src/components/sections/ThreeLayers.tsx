@@ -48,7 +48,7 @@ export function ThreeLayers() {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-background relative z-10">
+    <section id="camadas" className="py-12 md:py-20 bg-background relative z-10 scroll-mt-24">
       <div className="container mx-auto px-4 md:px-6">
         
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
