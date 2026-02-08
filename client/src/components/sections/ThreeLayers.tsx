@@ -47,22 +47,22 @@ export function ThreeLayers() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-background relative z-10">
+    <section className="py-12 md:py-20 bg-background relative z-10">
       <div className="container mx-auto px-4 md:px-6">
         
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <span className="text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-3 block">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
+          <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-2 block">
             Abordagem Integrada
           </span>
-          <h2 className="text-3xl md:text-5xl font-display text-primary mb-4 md:mb-6">
+          <h2 className="text-3xl md:text-5xl font-display text-primary mb-4">
             Três camadas de cuidado
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-            A psicologia sob medida se manifesta através de três frentes integradas, cada uma desenhada para atender diferentes necessidades e momentos de vida.
+          <p className="text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">
+            A psicologia sob medida se manifesta através de três frentes integradas, cada uma desenhada para atender diferentes necessidades.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {layers.map((layer, index) => (
             <motion.div
               key={layer.id}
@@ -70,10 +70,10 @@ export function ThreeLayers() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-border/50"
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-56 xl:h-64 overflow-hidden relative">
+              <div className="h-48 overflow-hidden relative shrink-0">
                 <div className={cn("absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-0 z-10", layer.color)} />
                 <img 
                   src={layer.image} 
@@ -82,31 +82,31 @@ export function ThreeLayers() {
                 />
                 
                 {/* Floating Badge */}
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur py-1 px-3 rounded-full border border-white/50 z-20">
-                  <span className={cn("text-xs font-bold uppercase tracking-wider", layer.textColor)}>
+                <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm py-1 px-3 rounded-full border border-white/50 z-20 shadow-sm">
+                  <span className={cn("text-[10px] font-bold uppercase tracking-wider", layer.textColor)}>
                     {layer.label}
                   </span>
                 </div>
               </div>
 
               {/* Content Body */}
-              <div className="p-6 xl:p-8 relative flex flex-col flex-grow">
-                <div className={cn("absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left", layer.color)} />
+              <div className="p-5 relative flex flex-col flex-grow">
+                <div className={cn("absolute top-0 left-0 w-full h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left", layer.color)} />
                 
-                <h3 className="text-xl xl:text-2xl font-display text-primary mb-1">{layer.title}</h3>
-                <p className={cn("text-xs xl:text-sm font-medium mb-3 xl:mb-4", layer.textColor)}>{layer.subtitle}</p>
+                <h3 className="text-xl font-display text-primary mb-1">{layer.title}</h3>
+                <p className={cn("text-xs font-semibold mb-3", layer.textColor)}>{layer.subtitle}</p>
                 
-                <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-grow">
+                <p className="text-muted-foreground leading-relaxed mb-4 text-sm flex-grow line-clamp-4">
                   {layer.description}
                 </p>
 
-                <div className="pt-2 mt-auto">
+                <div className="pt-2 mt-auto border-t border-border/30">
                    <Button 
                     variant="ghost" 
-                    className={cn("pl-0 hover:bg-transparent text-sm xl:text-base font-semibold group/btn transition-colors h-auto py-0", layer.textColor)}
+                    className={cn("pl-0 hover:bg-transparent text-sm font-semibold group/btn transition-colors h-auto py-2", layer.textColor)}
                   >
                     {layer.cta} 
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    <ArrowRight className="ml-2 w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 </div>
               </div>
