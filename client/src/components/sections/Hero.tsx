@@ -10,18 +10,18 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[#FFFAFA] overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-[#FFFAFA] overflow-hidden pt-32 md:pt-40">
       {/* Background Texture */}
       <div 
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center mix-blend-multiply pointer-events-none"
         style={{ backgroundImage: "url('/images/hero-bg.png')" }}
       />
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10 pt-20 md:pt-0">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Text Content */}
-          <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left pt-20 md:pt-0">
+          <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left">
             
             {/* Removed image logo, replaced with subtle text intro */}
             <motion.div
