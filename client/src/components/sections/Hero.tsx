@@ -22,17 +22,16 @@ export function Hero() {
           
           {/* Text Content */}
           <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left">
+            
+            {/* Removed image logo, replaced with subtle text intro */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full max-w-[280px] md:max-w-[320px] mx-auto lg:mx-0"
             >
-              <img 
-                src="/images/fernanda-logo-turquesa.jpg" 
-                alt="Fernanda do Valle Pessoa Psicóloga" 
-                className="w-full h-auto object-contain mix-blend-multiply"
-              />
+               <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-2">
+                 Psicóloga Clínica • CRP 20/03477
+               </span>
             </motion.div>
 
             <motion.div

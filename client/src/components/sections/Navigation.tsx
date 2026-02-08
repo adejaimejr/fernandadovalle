@@ -43,15 +43,15 @@ export function Navigation() {
         <a 
           href="#" 
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 group"
         >
-          {/* Logo container with strict height constraint */}
-          <div className="h-12 w-auto overflow-hidden">
-             <img 
-               src="/images/fernanda-logo-turquesa.jpg" 
-               alt="fv Fernanda do Valle" 
-               className="h-full w-auto object-contain mix-blend-multiply"
-             />
+          {/* Typographic Logo Construction */}
+          <div className="flex items-center">
+             <span className="font-script text-3xl text-primary leading-none -mb-1 mr-2 group-hover:opacity-80 transition-opacity">fv</span>
+             <div className="flex flex-col">
+               <span className="font-display text-lg text-primary leading-none tracking-wide group-hover:text-[#5A9999] transition-colors">FERNANDA DO VALLE</span>
+               <span className="text-[0.6rem] text-muted-foreground uppercase tracking-[0.2em] leading-none ml-[2px]">Psicóloga</span>
+             </div>
           </div>
         </a>
 
