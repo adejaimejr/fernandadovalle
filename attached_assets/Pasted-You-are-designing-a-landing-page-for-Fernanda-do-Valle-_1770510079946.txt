@@ -1,0 +1,221 @@
+You are designing a landing page for Fernanda do Valle Pessoa, a clinical psychologist, mental health author, and founder of the Instituto de Psicologia Positiva do Amazonas (Institute of Positive Psychology of Amazonas) in Brazil.
+
+This is NOT a generic psychology clinic website, nor a simple institutional page, nor an isolated professional resume. This landing page communicates THREE INTEGRATED LAYERS of care:
+1. Clinical Psychology (Individual psychotherapy)
+2. Instituto de Psicologia Positiva do Amazonas (Protocols, projects, and education)
+3. Books and Works in Mental Health (Accessible psychological content)
+
+CORE CONCEPT: "Psicologia sob medida" (Tailored Psychology)
+The central principle is that each person has a unique way of caring for themselves. The page must offer multiple pathways without hierarchizing them - clinic, institute, or books are equally valid entry points.
+
+DESIGN AESTHETIC:
+Follow the design.json attached as your complete design system guidelines. The overall aesthetic should feel:
+- Calm and welcoming, never rushed
+- Sophisticated and professional, yet warm and approachable  
+- Scientifically credible without being cold or institutional
+- Timeless and elegant, with generous white space that conveys TIME and LISTENING
+- Natural and organic, using soft colors and rounded shapes
+- Personalized and multilayered, visually communicating "customization" through subtle variations
+
+VISUAL VALUES TO TRANSMIT:
+- Time (not urgency)
+- Listening (not noise)
+- Science (not pseudoscience)
+- Depth (not superficiality)
+- Personalization (not standardization)
+
+ETHICAL BOUNDARIES (CRITICAL):
+❌ NEVER include:
+- Promises of cure or guaranteed results
+- Aggressive marketing language or artificial urgency
+- Empty motivational phrases
+- CTAs with pressure ("Don't miss this chance", "Limited spots")
+- Generic stock photos of "self-care" clichés
+- Overly edited or filtered imagery
+
+✅ ALWAYS include:
+- Scientific credibility (CRP registration, certifications)
+- Clear, accessible, ethical language
+- Multiple care pathways presented equally
+- Respect for individual timing and needs
+- Quality information over persuasion
+
+LANGUAGE: Brazilian Portuguese (pt-BR)
+All content must be in clear, accessible Brazilian Portuguese.
+
+---
+
+LANDING PAGE STRUCTURE & CONTENT:
+
+## SECTION 1: HERO
+**Layout:** Centered text + subtle background (soft gradient or abstract organic shape)
+**Background color:** #FFFAFA with subtle gradient to #DAC8BA
+
+**Content:**
+- Overline (small caps): "Fernanda do Valle Pessoa"
+- H1: "Psicologia sob medida, em diferentes camadas"
+- Subtitle: "Clínica, conhecimento e escuta para a saúde mental. Este é um espaço onde a psicologia não é padronizada. Aqui, o cuidado é sob medida — construído a partir da sua história, do seu tempo e das suas necessidades."
+- Two CTAs side by side:
+  - Primary button: "Iniciar Psicoterapia" (link: #clinica)
+  - Secondary button: "Conhecer o Instituto" (link: #instituto)
+
+**Visual:** Subtle botanical illustration or abstract organic shapes in the background. NO generic stock photos.
+
+---
+
+## SECTION 2: APRESENTAÇÃO PROFISSIONAL
+**Layout:** Split 40% image / 60% text (or centered on mobile)
+**Background:** #FFFAFA
+
+**Content:**
+**Image:** Professional portrait of Fernanda (circular or rounded rectangle)
+- Alt text: "Fernanda do Valle Pessoa, psicóloga clínica"
+
+**Text:**
+- H2 (DM Serif Display): "Fernanda do Valle Pessoa"
+- Subtitle (small, Montserrat): "Psicóloga clínica (CRP 20/03477)"
+- Description: "Psicóloga clínica, escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas. Fernanda do Valle é a psicóloga responsável pelos atendimentos da clínica, a fundadora e idealizadora dos protocolos do Instituto e autora de livros em saúde mental. Clínica, Instituto e obras não são frentes isoladas — são camadas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si."
+
+---
+
+## SECTION 3: AS TRÊS CAMADAS
+**Layout:** 3 cards in grid (1 column on mobile, 3 columns on desktop)
+**Background:** Alternate between #FFFAFA and #F8F6F3
+**Spacing:** Generous padding between cards (2rem)
+
+### Card 1: CLÍNICA PSICOLÓGICA
+**Badge/Icon:** Subtle icon or decorative element
+- Section label (small caps, Montserrat): "CLÍNICA PSICOLÓGICA"
+- Card title (DM Serif Display): "Atendimento psicológico sob medida"
+- Description: "Na clínica, Fernanda do Valle atua diretamente como psicóloga responsável pelos atendimentos."
+- Bullet points (Montserrat, with checkmark or bullet):
+  • Psicoterapia individual
+  • Atendimento a adolescentes e adultos
+  • Modalidade online (e presencial, quando disponível)
+  • Foco em promoção e prevenção em saúde mental
+- Closing text: "O processo terapêutico não segue fórmulas prontas. Cada acompanhamento é construído de forma singular, respeitando o ritmo emocional e a complexidade de cada pessoa."
+- CTA button (primary): "Agendar Conversa Inicial"
+
+### Card 2: INSTITUTO DE PSICOLOGIA POSITIVA DO AMAZONAS
+**Badge/Icon:** Subtle icon or decorative element
+- Section label (small caps): "INSTITUTO DE PSICOLOGIA POSITIVA DO AMAZONAS"
+- Card title (DM Serif Display): "Protocolos e projetos que ampliam o cuidado"
+- Description: "O Instituto de Psicologia Positiva do Amazonas foi fundado por Fernanda do Valle como um espaço dedicado ao desenvolvimento de práticas em saúde mental que respeitam a singularidade humana."
+- Subtitle: "No Instituto, a psicologia sob medida se expressa por meio de:"
+- Bullet points:
+  • Protocolos clínicos específicos
+  • Materiais terapêuticos e psicoeducativos
+  • Projetos de promoção e prevenção em saúde mental
+  • Conteúdos formativos e educacionais
+- Closing text: "O Instituto amplia o cuidado para além da clínica, alcançando pessoas, profissionais e instituições."
+- CTA button (primary): "Conhecer o Instituto"
+
+### Card 3: LIVROS E OBRAS EM SAÚDE MENTAL
+**Badge/Icon:** Subtle icon or decorative element
+- Section label (small caps): "LIVROS E OBRAS EM SAÚDE MENTAL"
+- Card title (DM Serif Display): "Cuidado e informação através da leitura"
+- Description: "Fernanda do Valle é autora de livros em saúde mental, nos quais traduz conceitos psicológicos de forma acessível, sensível e fundamentada. As obras oferecem uma outra camada de cuidado, permitindo que o leitor compreenda suas emoções, reflita sobre saúde mental e tenha acesso a informação psicológica de qualidade."
+- Closing text (italic or emphasized): "A escrita também é um gesto de cuidado."
+- CTA button (primary): "Explorar as Obras"
+
+---
+
+## SECTION 4: FORMAÇÃO E CERTIFICAÇÕES
+**Layout:** 1 column intro + 2 column grid for credentials (or single column on mobile)
+**Background:** #FFFAFA
+
+**Content:**
+- Section label (small caps): "FORMAÇÃO E CERTIFICAÇÕES"
+- H2 (DM Serif Display): "Prática baseada em ciência e evidências"
+- Introduction paragraph: "Fernanda do Valle Pessoa é psicóloga clínica (CRP 20/03477), com formação sólida e certificações nacionais e internacionais na área da saúde mental. Sua atuação é fundamentada em práticas baseadas em evidências científicas, com foco na promoção, prevenção e cuidado psicológico personalizado."
+
+**Credential Cards (4 items in 2x2 grid):**
+
+1. **Terapia Cognitivo-Comportamental**
+   - Icon: subtle badge or academic icon
+   - Title: "Especialista em TCC"
+   - Description: "Formação voltada à avaliação psicológica, formulação de caso e intervenções clínicas eficazes para diferentes demandas emocionais."
+
+2. **Psicologia Positiva**
+   - Icon: subtle badge or academic icon
+   - Title: "University of Pennsylvania"
+   - Description: "Especialização em Psicologia Positiva, com aprofundamento em bem-estar, forças de caráter, emoções positivas e desenvolvimento de recursos psicológicos."
+
+3. **Habilidades Psicológicas Positivas**
+   - Icon: subtle badge or academic icon
+   - Title: "Harvard University"
+   - Description: "Certificação em desenvolvimento de habilidades psicológicas positivas, com foco em resiliência, autorregulação emocional e competências protetivas."
+
+4. **Registro Profissional**
+   - Icon: official badge
+   - Title: "CRP 20/03477"
+   - Description: "Registro ativo no Conselho Regional de Psicologia, garantindo prática ética e atualização profissional contínua."
+
+**Closing paragraph:** "Seu trabalho integra ciência psicológica, sensibilidade clínica e acompanhamento sob medida, respeitando a singularidade de cada pessoa e momento de vida."
+
+---
+
+## SECTION 5: MÚLTIPLOS CAMINHOS (FINAL CTA)
+**Layout:** Centered content with 3 CTA buttons in row (stack on mobile)
+**Background:** Organic shape with #DAC8BA or subtle gradient
+
+**Content:**
+- H2 (DM Serif Display, centered): "Um mesmo cuidado, diferentes caminhos"
+- Subtitle (Montserrat, centered): "Você pode se beneficiar deste trabalho em diferentes níveis:"
+
+**Three CTA buttons (equal visual weight, side by side):**
+1. "Pela Clínica" → Subtitle: "Atendimentos psicológicos"
+2. "Pelo Instituto" → Subtitle: "Protocolos, projetos e ensino"  
+3. "Pelas Obras" → Subtitle: "Leitura e reflexão"
+
+---
+
+## SECTION 6: FOOTER
+**Layout:** 3 or 4 columns (stack on mobile)
+**Background:** #2C2C2C or #6A7C67 (dark, contrast with light page)
+**Text color:** #FFFFFF
+
+**Columns:**
+1. **Logo/Name**
+   - "Fernanda do Valle Pessoa" (script or serif font)
+   - Tagline: "Psicologia sob medida"
+
+2. **Navegação**
+   - Clínica
+   - Instituto
+   - Obras
+   - Formação
+
+3. **Contato**
+   - CRP: 20/03477
+   - WhatsApp: [número]
+   - E-mail: [email]
+   - Localização: Manaus, Amazonas
+
+4. **Legal**
+   - Política de Privacidade
+   - Termos de Uso
+   - Código de Ética
+
+**Bottom bar:**
+- "© 2025 Fernanda do Valle Pessoa. Todos os direitos reservados."
+
+---
+
+TECHNICAL REQUIREMENTS:
+- Fully responsive (mobile-first approach)
+- Smooth scroll behavior for anchor links
+- Accessibility: WCAG AA minimum, AAA for body text
+- Semantic HTML5
+- All interactive elements must have clear focus states
+- Images must have descriptive alt text
+- Performance: lazy load images, optimize assets
+
+ANIMATION GUIDELINES:
+- Use slow, deliberate animations (0.6s - 1s)
+- Fade-in on scroll for sections
+- Subtle hover effects on cards and buttons (lift + shadow)
+- NO aggressive animations, NO pulse effects, NO urgency-creating motion
+- Parallax only if extremely subtle
+
+Remember: This page must convey TIME, LISTENING, SCIENCE, and PERSONALIZATION through every design choice. The visitor should never feel rushed or pressured. Each pathway (clinic, institute, books) is equally valid and should be presented with equal visual importance.

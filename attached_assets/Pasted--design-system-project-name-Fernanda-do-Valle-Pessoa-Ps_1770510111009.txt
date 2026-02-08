@@ -1,0 +1,399 @@
+{
+  "design_system": {
+    "project_name": "Fernanda do Valle Pessoa - Psicologia sob Medida",
+    "design_philosophy": "A landing page não é uma página de clínica genérica, nem um currículo isolado. É um hub que comunica três camadas integradas de cuidado: Clínica Psicológica, Instituto de Psicologia Positiva do Amazonas, e Obras em Saúde Mental. O design deve transmitir TEMPO, ESCUTA, CIÊNCIA e PERSONALIZAÇÃO através de uma estética calma, acolhedora e sofisticada. Cada elemento visual reforça o conceito de 'sob medida' - nada é padronizado ou genérico.",
+    
+    "core_concept": {
+      "tagline": "Psicologia sob medida, em diferentes camadas",
+      "principle": "Cada pessoa tem uma forma única de cuidar de si. O design deve refletir essa multiplicidade de caminhos sem hierarquizar as frentes de trabalho.",
+      "visual_translation": "Usar camadas visuais, sobreposições sutis, e layouts que se adaptam para comunicar personalização e profundidade"
+    },
+
+    "color_palette": {
+      "primary": {
+        "background": "#FFFAFA",
+        "description": "Off-white, transmite calma e tempo",
+        "usage": "Background principal, cria espaço para respirar e pensar"
+      },
+      "accent_warm": {
+        "peach_light": "#DAC8BA",
+        "description": "Peach-beige suave, acolhedor sem infantilizar",
+        "usage": "Seções de destaque, cards, fundos alternados"
+      },
+      "accent_coral": {
+        "coral": "#E8BBA3",
+        "description": "Coral sutil, transmite calor humano",
+        "usage": "Elementos decorativos, hover states, destaques pontuais"
+      },
+      "accent_sage": {
+        "sage_green": "#6A7C67",
+        "description": "Verde sage, transmite crescimento e natureza",
+        "usage": "CTAs principais, elementos interativos importantes"
+      },
+      "neutral": {
+        "beige_cream": "#E6CBA8",
+        "description": "Beige-cream natural",
+        "usage": "Fundos secundários, separadores visuais sutis"
+      },
+      "institutional": {
+        "deep_taupe": "#8C7B75",
+        "description": "Taupe profundo para elementos institucionais",
+        "usage": "Seção do Instituto, formação, elementos mais formais"
+      },
+      "text": {
+        "primary": "#2C2C2C",
+        "secondary": "#5A5A5A",
+        "muted": "#8C8C8C",
+        "on_dark": "#FFFFFF",
+        "emphasis": "#6A7C67"
+      }
+    },
+
+    "typography": {
+      "font_families": {
+        "display": {
+          "name": "DM Serif Display",
+          "fallback": "Georgia, serif",
+          "usage": "Títulos principais, conceitos-chave, frases que requerem peso emocional",
+          "character": "Elegante, atemporal, transmite seriedade e profundidade"
+        },
+        "script": {
+          "name": "Dancing Script ou Satisfy",
+          "fallback": "cursive",
+          "usage": "Assinatura 'Fernanda do Valle', destaques especiais pontuais",
+          "character": "Pessoal, humanizado, mas usado com parcimônia"
+        },
+        "body": {
+          "name": "Montserrat",
+          "fallback": "Arial, sans-serif",
+          "usage": "Corpo de texto, navegação, descrições, listas",
+          "character": "Legível, moderna, acessível, sem ser fria"
+        },
+        "institutional": {
+          "name": "Inter ou Montserrat Medium",
+          "fallback": "sans-serif",
+          "usage": "Formações, certificações, credenciais (CRP), seção Instituto",
+          "character": "Credibilidade técnica sem perder acolhimento"
+        }
+      },
+      
+      "scale": {
+        "hero_h1": {
+          "font": "DM Serif Display",
+          "size": "clamp(2rem, 4vw, 3.5rem)",
+          "weight": 400,
+          "line_height": 1.3,
+          "letter_spacing": "-0.015em",
+          "color": "#2C2C2C",
+          "max_width": "700px"
+        },
+        "concept_heading": {
+          "font": "DM Serif Display",
+          "size": "clamp(1.5rem, 3vw, 2.25rem)",
+          "weight": 400,
+          "line_height": 1.4,
+          "letter_spacing": "-0.01em",
+          "color": "#2C2C2C",
+          "style": "Usado para 'Psicologia sob medida'"
+        },
+        "section_title": {
+          "font": "Montserrat",
+          "size": "clamp(1.25rem, 2.5vw, 1.75rem)",
+          "weight": 600,
+          "line_height": 1.3,
+          "letter_spacing": "0.02em",
+          "text_transform": "uppercase",
+          "color": "#5A5A5A",
+          "style": "Ex: 'CLÍNICA PSICOLÓGICA', 'INSTITUTO'"
+        },
+        "body_large": {
+          "font": "Montserrat",
+          "size": "1.125rem",
+          "weight": 400,
+          "line_height": 1.8,
+          "letter_spacing": "0",
+          "color": "#5A5A5A",
+          "style": "Textos explicativos principais"
+        },
+        "body": {
+          "font": "Montserrat",
+          "size": "1rem",
+          "weight": 400,
+          "line_height": 1.7,
+          "letter_spacing": "0",
+          "color": "#5A5A5A"
+        },
+        "credentials": {
+          "font": "Montserrat",
+          "size": "0.875rem",
+          "weight": 500,
+          "line_height": 1.5,
+          "letter_spacing": "0.01em",
+          "color": "#8C8C8C",
+          "style": "CRP, formações, certificações"
+        }
+      }
+    },
+
+    "spacing": {
+      "philosophy": "Espaço em branco generoso transmite TEMPO e ESCUTA. Não apressar o visitante.",
+      "unit": "8px",
+      "scale": {
+        "xs": "0.5rem",
+        "sm": "1rem",
+        "md": "1.5rem",
+        "lg": "2.5rem",
+        "xl": "4rem",
+        "2xl": "6rem",
+        "3xl": "8rem"
+      },
+      "section_padding": {
+        "mobile": "4rem 1.5rem",
+        "tablet": "6rem 2rem",
+        "desktop": "8rem 3rem"
+      },
+      "breathing_room": "Mínimo 3rem entre seções principais"
+    },
+
+    "layout_structure": {
+      "hero": {
+        "concept": "Apresentação clara das três camadas",
+        "layout": "Central, texto principal + 2 CTAs lado a lado (Clínica | Instituto)",
+        "visual": "Foto sutil ou elemento abstrato ao fundo, sem competir com texto"
+      },
+      "presentation": {
+        "layout": "Foto circular + texto biográfico sintético",
+        "position": "Centralizado ou 40/60 split"
+      },
+      "three_layers": {
+        "clinic": "Card/seção com descrição de atendimento clínico",
+        "institute": "Card/seção com protocolos e projetos do Instituto",
+        "books": "Card/seção com obras em saúde mental"
+      },
+      "credentials": {
+        "layout": "Lista vertical ou grid 2 colunas",
+        "style": "Formal mas não engessado, com ícones sutis"
+      },
+      "final_cta": {
+        "concept": "Múltiplos caminhos, sem hierarquizar",
+        "layout": "3 CTAs lado a lado ou grid",
+        "copy": "Iniciar psicoterapia | Conhecer o Instituto | Explorar as obras"
+      }
+    },
+
+    "component_styles": {
+      "buttons": {
+        "primary": {
+          "background": "#6A7C67",
+          "color": "#FFFFFF",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": "darken 8%, subtle lift",
+          "transition": "all 0.3s ease",
+          "style": "Não usar pill shape - usar bordas sutis para transmitir seriedade"
+        },
+        "secondary": {
+          "background": "transparent",
+          "color": "#6A7C67",
+          "border": "2px solid #6A7C67",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": "background #6A7C67, color white",
+          "transition": "all 0.3s ease"
+        },
+        "tertiary": {
+          "background": "transparent",
+          "color": "#5A5A5A",
+          "border": "none",
+          "padding": "0.75rem 1.5rem",
+          "text_decoration": "underline",
+          "hover": "color #6A7C67"
+        }
+      },
+      
+      "cards": {
+        "layer_card": {
+          "description": "Cards para Clínica, Instituto, Obras",
+          "background": "#FFFFFF",
+          "border": "1px solid rgba(140, 123, 117, 0.15)",
+          "border_radius": "12px",
+          "padding": "2.5rem",
+          "shadow": "0 2px 12px rgba(0, 0, 0, 0.04)",
+          "hover": "subtle lift, border color intensify",
+          "layout": "Ícone/badge → Título → Descrição → Lista de pontos → CTA"
+        },
+        "credential_card": {
+          "background": "#FFFAFA",
+          "border": "1px solid rgba(218, 200, 186, 0.3)",
+          "border_radius": "8px",
+          "padding": "1.5rem",
+          "layout": "Ícone → Instituição → Título da certificação"
+        }
+      },
+
+      "navigation": {
+        "style": "Clean, minimal, sticky on scroll",
+        "background": "rgba(255, 250, 250, 0.98)",
+        "backdrop_filter": "blur(12px)",
+        "padding": "1rem 2rem",
+        "logo": {
+          "type": "Text-based 'Fernanda do Valle Pessoa' ou 'FV'",
+          "font": "Montserrat Medium ou DM Serif Display",
+          "size": "1.25rem",
+          "color": "#2C2C2C"
+        },
+        "links": {
+          "font": "Montserrat",
+          "size": "0.95rem",
+          "weight": 500,
+          "color": "#5A5A5A",
+          "hover": "color #6A7C67, subtle underline",
+          "items": "Clínica | Instituto | Obras | Formação | Contato"
+        }
+      },
+
+      "dividers": {
+        "style": "Sutis, orgânicos, nunca agressivos",
+        "type_1": "Linha 1px solid rgba(140, 123, 117, 0.1)",
+        "type_2": "Espaço em branco generoso (4-6rem)",
+        "type_3": "Mudança de background color suave"
+      }
+    },
+
+    "visual_metaphors": {
+      "layers": {
+        "concept": "As três camadas (Clínica, Instituto, Obras) devem ser visualmente distintas mas harmonizadas",
+        "execution": "Usar backgrounds sutilmente diferentes, mas manter unidade visual",
+        "example": "Clínica (#FFFAFA) → Instituto (#F8F6F3) → Obras (#FFFAFA)"
+      },
+      "customization": {
+        "concept": "Transmitir 'sob medida' através de elementos visuais não padronizados",
+        "execution": "Variações sutis em tamanhos de card, layouts assimétricos suaves, elementos que 'respiram'"
+      },
+      "time_and_listening": {
+        "concept": "O design não deve apressar - deve convidar à pausa",
+        "execution": "Animações lentas (0.6s+), espaçamento generoso, scrollytelling suave"
+      }
+    },
+
+    "photography_and_imagery": {
+      "portrait": {
+        "style": "Profissional, natural light, fundo neutro",
+        "treatment": "Sem filtros pesados, cores naturais, levemente desaturado",
+        "composition": "Foto de rosto/busto, expressão serena e acolhedora",
+        "shape": "Circular ou rounded rectangle (16px radius)"
+      },
+      "decorative": {
+        "type": "Elementos botânicos sutis, formas orgânicas abstratas",
+        "usage": "Usado com parcimônia, nunca competindo com conteúdo",
+        "style": "Line art, ilustrações minimalistas, texturas suaves"
+      },
+      "avoid": "Fotos genéricas de stock, clichês de 'self-care', imagens excessivamente editadas"
+    },
+
+    "content_tone": {
+      "writing_style": "Ético, claro, acessível, sem jargões desnecessários",
+      "what_to_avoid": [
+        "Promessas de cura",
+        "Marketing agressivo ou urgência artificial",
+        "Linguagem motivacional vazia",
+        "Termos como 'transformação instantânea', 'vida perfeita'",
+        "CTAs pressionadores ('Não perca essa chance')"
+      ],
+      "what_to_embrace": [
+        "Credibilidade científica",
+        "Respeito à singularidade",
+        "Tempo como valor (não como limitação)",
+        "Múltiplos caminhos de cuidado",
+        "Informação de qualidade"
+      ],
+      "cta_language": {
+        "preferred": "Iniciar psicoterapia | Agendar conversa inicial | Conhecer o Instituto | Explorar as obras",
+        "avoid": "Garanta sua vaga | Última chance | Transforme sua vida agora"
+      }
+    },
+
+    "accessibility_and_ethics": {
+      "contrast": "WCAG AAA para texto principal, AA mínimo para secundário",
+      "language": "Linguagem inclusiva, sem pressupostos sobre identidade ou vivência",
+      "transparency": "Informações sobre CRP, modalidade de atendimento, processo terapêutico claramente apresentadas",
+      "no_overpromising": "Nenhum elemento visual ou textual pode sugerir resultados garantidos"
+    },
+
+    "animations": {
+      "philosophy": "Movimentos calmos, deliberados, que respeitam o tempo do visitante",
+      "speed": {
+        "default": "0.6s ease-out",
+        "hover": "0.3s ease",
+        "page_transitions": "1s ease-in-out"
+      },
+      "scroll_effects": {
+        "sections": "Fade in from below, stagger 0.2s",
+        "cards": "Subtle fade + slide, no bounce or aggressive movement",
+        "images": "Parallax muito sutil ou zoom suave"
+      },
+      "interactions": {
+        "hover": "Lift + shadow increase (muito sutil)",
+        "click": "Smooth transition, no jarring effects",
+        "cta_buttons": "NO pulse animation - apenas subtle hover lift"
+      }
+    },
+
+    "section_specific_guidelines": {
+      "hero": {
+        "structure": "H1: 'Psicologia sob medida, em diferentes camadas' + Subtitle + 2 CTAs",
+        "visual": "Background suave, foto ou elemento abstrato sem competir",
+        "ctas": "Clínica (primary) | Instituto (secondary) - lado a lado"
+      },
+      "about_fernanda": {
+        "structure": "Foto + Nome + CRP + Bio curta (3-4 linhas)",
+        "visual": "Layout 40% foto / 60% texto ou centralizado",
+        "emphasis": "'Psicóloga clínica, escritora em saúde mental, fundadora do Instituto'"
+      },
+      "three_layers": {
+        "clinic": {
+          "title": "CLÍNICA PSICOLÓGICA",
+          "subtitle": "Atendimento psicológico sob medida",
+          "bullets": "Psicoterapia individual | Adolescentes e adultos | Online (e presencial quando disponível) | Promoção e prevenção",
+          "cta": "Iniciar psicoterapia"
+        },
+        "institute": {
+          "title": "INSTITUTO DE PSICOLOGIA POSITIVA DO AMAZONAS",
+          "subtitle": "Protocolos e projetos que ampliam o cuidado",
+          "bullets": "Protocolos clínicos | Materiais terapêuticos | Projetos de promoção | Conteúdos formativos",
+          "cta": "Conhecer o Instituto"
+        },
+        "books": {
+          "title": "LIVROS E OBRAS EM SAÚDE MENTAL",
+          "subtitle": "Cuidado e informação através da leitura",
+          "description": "Obras que traduzem conceitos psicológicos de forma acessível e fundamentada",
+          "cta": "Explorar as obras"
+        }
+      },
+      "credentials": {
+        "title": "FORMAÇÃO E CERTIFICAÇÕES",
+        "layout": "Lista com ícones ou cards pequenos",
+        "items": [
+          "CRP 20/03477",
+          "Especialista em TCC",
+          "Especialização em Psicologia Positiva (University of Pennsylvania)",
+          "Certificação em Harvard University (habilidades psicológicas positivas)"
+        ]
+      },
+      "final_cta": {
+        "title": "UM MESMO CUIDADO, DIFERENTES CAMINHOS",
+        "subtitle": "Você pode se beneficiar deste trabalho em diferentes níveis",
+        "layout": "3 CTAs em grid ou lado a lado",
+        "ctas": "Clínica (atendimentos) | Instituto (protocolos e ensino) | Obras (leitura e reflexão)"
+      }
+    },
+
+    "responsive_behavior": {
+      "mobile": "< 768px - Single column, stacked, generoso padding vertical",
+      "tablet": "768px - 1024px - 2 columns onde apropriado, manter legibilidade",
+      "desktop": "> 1024px - Full layout, max-width 1200px, centered"
+    }
+  }
+}
