@@ -25,11 +25,12 @@ export function ThreeLayers() {
       subtitle: "Projetos e Ensino",
       description: "Um braço educacional e institucional dedicado ao desenvolvimento de protocolos, materiais terapêuticos e projetos de prevenção que ampliam o alcance da psicologia.",
       cta: "Conhecer Projetos",
-      image: "/images/institute-lotus.jpg",
+      image: "/images/institute-logo.jpg",
       color: "bg-[#F5C518]",
       textColor: "text-[#D4A500]",
       borderColor: "border-[#F5C518]",
-      lightColor: "bg-[#F5C518]/10"
+      lightColor: "bg-[#F5C518]/10",
+      isLogo: true
     },
     {
       id: "obras",
@@ -73,12 +74,17 @@ export function ThreeLayers() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-72 overflow-hidden relative shrink-0">
+              <div className={cn("h-72 overflow-hidden relative shrink-0", layer.isLogo ? "bg-[#FFC60B]" : "")}>
                 <div className={cn("absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-0 z-10", layer.color)} />
                 <img 
                   src={layer.image} 
                   alt={layer.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[10%] group-hover:grayscale-0"
+                  className={cn(
+                    "w-full h-full transition-transform duration-700",
+                    layer.isLogo 
+                      ? "object-contain p-8 group-hover:scale-105" 
+                      : "object-cover group-hover:scale-110 grayscale-[10%] group-hover:grayscale-0"
+                  )}
                 />
                 
                 {/* Floating Badge */}
