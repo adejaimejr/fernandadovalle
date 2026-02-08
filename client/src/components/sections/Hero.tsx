@@ -21,19 +21,9 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Text Content */}
-          <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left">
+          <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left pt-20 md:pt-0">
             
             {/* Removed image logo, replaced with subtle text intro */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-               <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-2">
-                 Psicóloga Clínica • CRP 20/03477
-               </span>
-            </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
