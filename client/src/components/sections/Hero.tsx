@@ -43,17 +43,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col xs:flex-row gap-2 md:gap-4 justify-center lg:justify-start pb-4 md:pb-0"
+              className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center lg:justify-start pb-4 md:pb-0"
             >
               <Button 
                 onClick={() => scrollToSection("clinica")}
-                className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-primary/20 transition-all duration-300 w-full xs:w-auto"
+                className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-primary/20 transition-all duration-300 w-full sm:w-auto"
               >
                 Agendar Conversa
               </Button>
               <Button 
                 onClick={() => scrollToSection("instituto")}
-                className="bg-[#F5C518] hover:bg-[#D4A500] text-secondary-foreground rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-secondary/20 transition-all duration-300 w-full xs:w-auto"
+                className="bg-[#F5C518] hover:bg-[#D4A500] text-secondary-foreground rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-secondary/20 transition-all duration-300 w-full sm:w-auto"
               >
                 Conhecer o Instituto
               </Button>
