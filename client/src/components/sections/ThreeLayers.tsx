@@ -73,7 +73,7 @@ export function ThreeLayers() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-border/50 flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-56 overflow-hidden relative shrink-0">
+              <div className="h-72 overflow-hidden relative shrink-0">
                 <div className={cn("absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-0 z-10", layer.color)} />
                 <img 
                   src={layer.image} 
