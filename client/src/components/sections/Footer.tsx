@@ -42,11 +42,11 @@ export function Footer() {
           
           {/* Brand & Photo - Col 1 (3 cols) */}
           <div className="md:col-span-3 space-y-6">
-             <div className="h-8 w-auto overflow-hidden opacity-90 brightness-0 invert">
+             <div className="h-12 w-auto overflow-hidden">
                <img 
                  src="/images/fernanda-logo-turquesa.jpg" 
                  alt="fv Fernanda do Valle" 
-                 className="h-full w-auto object-contain"
+                 className="h-full w-auto object-contain rounded-md"
                />
             </div>
             
@@ -120,7 +120,7 @@ export function Footer() {
                   Avenida Jacira Reis, 5051 - Manaus - AM <span className="text-white/40 mx-2">|</span> CEP 69033-008
                 </p>
                 
-                <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-white/5 grayscale hover:grayscale-0 transition-all duration-500">
+                <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-white/5 transition-all duration-500 hover:border-[#6FB4B4]/50">
                     <iframe 
                         src="https://maps.google.com/maps?q=Avenida%20Jacira%20Reis%2C%205051%20-%20Manaus%20-%20AM&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         width="100%" 
