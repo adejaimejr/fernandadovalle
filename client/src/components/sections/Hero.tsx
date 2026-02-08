@@ -50,7 +50,7 @@ export function Hero() {
                 onClick={() => scrollToSection("clinica")}
                 className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-8 py-7 text-base shadow-lg hover:shadow-primary/20 transition-all duration-300"
               >
-                Agendar Sessão
+                Agendar Conversa
               </Button>
               <Button 
                 onClick={() => scrollToSection("instituto")}

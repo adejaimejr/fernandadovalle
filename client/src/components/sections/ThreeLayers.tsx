@@ -11,7 +11,7 @@ export function ThreeLayers() {
       title: "Clínica Psicológica",
       subtitle: "Atendimento individual",
       description: "Um espaço de escuta qualificada, onde Fernanda do Valle atua diretamente com psicoterapia para adolescentes e adultos. O foco é a promoção da saúde mental e o cuidado personalizado.",
-      cta: "Agendar Conversa",
+      cta: "Agendar Sessão",
       image: "/images/portrait-smiling.jpg",
       color: "bg-[#6FB4B4]",
       textColor: "text-[#6FB4B4]",
