@@ -1,0 +1,491 @@
+{
+  "design_system": {
+    "project_name": "Fernanda do Valle Pessoa - Psicologia sob Medida",
+    "version": "2.0 - Com identidade visual estabelecida",
+    
+    "design_philosophy": "A landing page comunica três camadas integradas de cuidado através de uma identidade visual já estabelecida. O design usa as cores das marcas existentes (turquesa para a marca pessoal e amarelo para o Instituto) para diferenciar visualmente as camadas, mantendo uma estética calma, acolhedora e sofisticada que transmite TEMPO, ESCUTA, CIÊNCIA e PERSONALIZAÇÃO.",
+    
+    "brand_identity": {
+      "personal_brand": {
+        "name": "fv Fernanda do Valle",
+        "logo_file": "fernanda-logo-turquesa.png",
+        "primary_color": "#6FB4B4",
+        "color_name": "Turquesa",
+        "represents": "Marca pessoal, Clínica Psicológica, atendimento individual",
+        "logo_elements": "Script 'fv' + lâmpada (insight) + nome em maiúsculas + 'PSICÓLOGA'",
+        "usage_contexts": ["Header/Navigation", "Hero section", "Clinical section", "Footer"]
+      },
+      "institute_brand": {
+        "name": "Instituto de Psicologia Positiva do Amazonas",
+        "logo_file": "instituto-logo-amarelo.png",
+        "primary_color": "#F5C518",
+        "color_name": "Amarelo vibrante",
+        "represents": "Instituto, protocolos, projetos educacionais, atuação institucional",
+        "logo_elements": "Sorriso estilizado (curva) com texto seguindo a forma",
+        "usage_contexts": ["Institute section only"]
+      }
+    },
+
+    "color_palette": {
+      "brand_turquoise": {
+        "main": "#6FB4B4",
+        "light": "#A4D4D4",
+        "dark": "#5A9999",
+        "description": "Turquesa da marca pessoal Fernanda do Valle",
+        "usage": "Logo pessoal, navegação, seção Clínica, CTAs relacionados a atendimento, elementos da marca pessoal",
+        "text_on_color": "#FFFFFF",
+        "accessibility": "WCAG AA compliant with white text"
+      },
+      "brand_yellow": {
+        "main": "#F5C518",
+        "light": "#FFF4CC",
+        "dark": "#D4A500",
+        "description": "Amarelo vibrante do Instituto",
+        "usage": "Logo do Instituto, seção Instituto, elementos institucionais, CTAs do Instituto",
+        "text_on_color": "#2C2C2C",
+        "accessibility": "CRITICAL: Only use dark text (#2C2C2C) on yellow backgrounds for contrast"
+      },
+      "neutral_backgrounds": {
+        "white": "#FFFFFF",
+        "off_white": "#FFFAFA",
+        "warm_white": "#FFFEF5",
+        "light_beige": "#F8F6F3",
+        "description": "Backgrounds neutros e acolhedores",
+        "usage": "Backgrounds principais das seções"
+      },
+      "accent_warm": {
+        "peach_light": "#DAC8BA",
+        "coral": "#E8BBA3",
+        "beige_cream": "#E6CBA8",
+        "description": "Tons quentes neutros",
+        "usage": "Seção Obras, elementos decorativos, divisores sutis"
+      },
+      "accent_neutral": {
+        "sage_green": "#6A7C67",
+        "taupe": "#8C7B75",
+        "description": "Acentos neutros para elementos não específicos",
+        "usage": "CTAs terciários, elementos que não pertencem a uma camada específica"
+      },
+      "text": {
+        "primary": "#2C2C2C",
+        "secondary": "#5A5A5A",
+        "muted": "#8C8C8C",
+        "on_dark": "#FFFFFF",
+        "on_turquoise": "#FFFFFF",
+        "on_yellow": "#2C2C2C"
+      }
+    },
+
+    "section_color_mapping": {
+      "hero": {
+        "background": "#FFFAFA",
+        "accent": "#6FB4B4",
+        "logo": "fernanda-logo-turquesa.png (full version)"
+      },
+      "about": {
+        "background": "#FFFFFF",
+        "accent": "#6FB4B4"
+      },
+      "clinic": {
+        "background": "#FFFAFA",
+        "primary_color": "#6FB4B4",
+        "card_border": "rgba(111, 180, 180, 0.2)",
+        "cta_background": "#6FB4B4",
+        "cta_text": "#FFFFFF",
+        "hover_color": "#5A9999"
+      },
+      "institute": {
+        "background": "#FFFEF5",
+        "primary_color": "#F5C518",
+        "card_border": "rgba(245, 197, 24, 0.2)",
+        "logo": "instituto-logo-amarelo.png (prominent display)",
+        "cta_background": "#F5C518",
+        "cta_text": "#2C2C2C",
+        "hover_color": "#D4A500",
+        "note": "Use yellow strategically - high contrast element"
+      },
+      "books": {
+        "background": "#FFFFFF",
+        "primary_color": "#DAC8BA",
+        "card_border": "rgba(218, 200, 186, 0.3)",
+        "cta_background": "#6A7C67",
+        "cta_text": "#FFFFFF",
+        "hover_color": "#5A6B57"
+      },
+      "credentials": {
+        "background": "#F8F6F3",
+        "accent": "#8C7B75"
+      },
+      "final_cta": {
+        "background": "#DAC8BA",
+        "shape": "organic curved shape"
+      }
+    },
+
+    "typography": {
+      "font_families": {
+        "display": {
+          "name": "DM Serif Display",
+          "fallback": "Georgia, serif",
+          "usage": "Títulos principais, conceitos-chave, frases emocionais",
+          "character": "Elegante, atemporal, profundidade"
+        },
+        "body": {
+          "name": "Montserrat",
+          "fallback": "Arial, sans-serif",
+          "usage": "Corpo de texto, navegação, descrições",
+          "character": "Legível, moderna, acessível"
+        },
+        "logo_script": {
+          "note": "Logo uses custom script - do not replicate, use image files"
+        }
+      },
+      
+      "scale": {
+        "hero_h1": {
+          "font": "DM Serif Display",
+          "size": "clamp(2rem, 4vw, 3.5rem)",
+          "weight": 400,
+          "line_height": 1.3,
+          "letter_spacing": "-0.015em",
+          "color": "#2C2C2C"
+        },
+        "section_title_caps": {
+          "font": "Montserrat",
+          "size": "clamp(0.875rem, 1.5vw, 1rem)",
+          "weight": 700,
+          "line_height": 1.3,
+          "letter_spacing": "0.1em",
+          "text_transform": "uppercase",
+          "color": "#5A5A5A",
+          "usage": "CLÍNICA PSICOLÓGICA, INSTITUTO, etc."
+        },
+        "section_heading": {
+          "font": "DM Serif Display",
+          "size": "clamp(1.5rem, 3vw, 2.25rem)",
+          "weight": 400,
+          "line_height": 1.4,
+          "letter_spacing": "-0.01em",
+          "color": "#2C2C2C"
+        },
+        "body_large": {
+          "font": "Montserrat",
+          "size": "1.125rem",
+          "weight": 400,
+          "line_height": 1.8,
+          "color": "#5A5A5A"
+        },
+        "body": {
+          "font": "Montserrat",
+          "size": "1rem",
+          "weight": 400,
+          "line_height": 1.7,
+          "color": "#5A5A5A"
+        }
+      }
+    },
+
+    "logo_usage": {
+      "header_navigation": {
+        "logo": "fernanda-logo-turquesa.png",
+        "version": "Simplified - 'fv FERNANDA DO VALLE' (without PSICÓLOGA)",
+        "height": "45px",
+        "position": "left aligned",
+        "background": "rgba(255, 250, 250, 0.98) with backdrop blur"
+      },
+      "hero_section": {
+        "logo": "fernanda-logo-turquesa.png",
+        "version": "Full - 'fv FERNANDA DO VALLE PSICÓLOGA'",
+        "size": "max-width 400px",
+        "position": "centered or left-aligned",
+        "treatment": "Clean, no filters"
+      },
+      "institute_section": {
+        "logo": "instituto-logo-amarelo.png",
+        "size": "max-width 500px",
+        "position": "Centered above or within the Institute card",
+        "treatment": "Prominent display, main visual element of section",
+        "note": "This is the ONLY place to use the yellow logo"
+      },
+      "footer": {
+        "logo": "fernanda-logo-turquesa.png",
+        "version": "Simplified - 'fv' or 'fv FERNANDA DO VALLE'",
+        "height": "40px",
+        "color": "#FFFFFF or maintain turquoise on dark background"
+      }
+    },
+
+    "component_styles": {
+      "buttons": {
+        "primary_clinic": {
+          "background": "#6FB4B4",
+          "color": "#FFFFFF",
+          "border": "none",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": {
+            "background": "#5A9999",
+            "transform": "translateY(-2px)",
+            "box_shadow": "0 4px 12px rgba(111, 180, 180, 0.3)"
+          },
+          "usage": "Clinical section CTAs"
+        },
+        "primary_institute": {
+          "background": "#F5C518",
+          "color": "#2C2C2C",
+          "border": "none",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": {
+            "background": "#D4A500",
+            "transform": "translateY(-2px)",
+            "box_shadow": "0 4px 12px rgba(245, 197, 24, 0.3)"
+          },
+          "usage": "Institute section CTAs",
+          "accessibility_note": "Yellow requires dark text for WCAG compliance"
+        },
+        "primary_books": {
+          "background": "#6A7C67",
+          "color": "#FFFFFF",
+          "border": "none",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": {
+            "background": "#5A6B57",
+            "transform": "translateY(-2px)",
+            "box_shadow": "0 4px 12px rgba(106, 124, 103, 0.3)"
+          },
+          "usage": "Books section CTAs"
+        },
+        "secondary_outline": {
+          "background": "transparent",
+          "color": "inherit from context",
+          "border": "2px solid currentColor",
+          "padding": "1rem 2.5rem",
+          "border_radius": "8px",
+          "font_weight": 600,
+          "hover": {
+            "background": "currentColor",
+            "color": "#FFFFFF"
+          }
+        }
+      },
+
+      "cards": {
+        "clinic_card": {
+          "background": "#FFFFFF",
+          "border": "1px solid rgba(111, 180, 180, 0.2)",
+          "border_radius": "12px",
+          "padding": "2.5rem",
+          "box_shadow": "0 2px 12px rgba(0, 0, 0, 0.04)",
+          "hover": {
+            "border_color": "rgba(111, 180, 180, 0.4)",
+            "transform": "translateY(-4px)",
+            "box_shadow": "0 8px 24px rgba(111, 180, 180, 0.15)"
+          }
+        },
+        "institute_card": {
+          "background": "#FFFEF5",
+          "border": "2px solid rgba(245, 197, 24, 0.3)",
+          "border_radius": "12px",
+          "padding": "2.5rem",
+          "box_shadow": "0 2px 12px rgba(0, 0, 0, 0.04)",
+          "hover": {
+            "border_color": "rgba(245, 197, 24, 0.5)",
+            "transform": "translateY(-4px)",
+            "box_shadow": "0 8px 24px rgba(245, 197, 24, 0.2)"
+          },
+          "special_note": "Instituto logo should be prominently displayed within this card"
+        },
+        "books_card": {
+          "background": "#FFFFFF",
+          "border": "1px solid rgba(218, 200, 186, 0.3)",
+          "border_radius": "12px",
+          "padding": "2.5rem",
+          "box_shadow": "0 2px 12px rgba(0, 0, 0, 0.04)",
+          "hover": {
+            "border_color": "rgba(218, 200, 186, 0.5)",
+            "transform": "translateY(-4px)",
+            "box_shadow": "0 8px 24px rgba(218, 200, 186, 0.15)"
+          }
+        }
+      },
+
+      "navigation": {
+        "background": "rgba(255, 250, 250, 0.98)",
+        "backdrop_filter": "blur(12px)",
+        "border_bottom": "1px solid rgba(111, 180, 180, 0.1)",
+        "padding": "1rem 2rem",
+        "position": "sticky top-0",
+        "logo_height": "45px",
+        "links": {
+          "font": "Montserrat",
+          "size": "0.95rem",
+          "weight": 500,
+          "color": "#5A5A5A",
+          "hover_color": "#6FB4B4",
+          "active_color": "#6FB4B4"
+        }
+      }
+    },
+
+    "spacing": {
+      "section_padding": {
+        "mobile": "4rem 1.5rem",
+        "tablet": "6rem 2rem",
+        "desktop": "8rem 3rem"
+      },
+      "between_sections": "4rem minimum",
+      "card_gap": "2rem",
+      "container_max_width": "1200px"
+    },
+
+    "animations": {
+      "transitions": {
+        "default": "0.3s ease",
+        "slow": "0.6s ease-out",
+        "hover": "0.3s ease"
+      },
+      "hover_effects": {
+        "lift": "translateY(-4px)",
+        "shadow_increase": "from subtle to elevated"
+      }
+    }
+  }
+}
+```
+
+---
+
+# 🔄 **DOCUMENTO DE MUDANÇAS PARA O REPLIT**
+
+Cole isso no chat do Replit:
+```
+ATUALIZAÇÃO CRÍTICA - IDENTIDADE VISUAL ESTABELECIDA
+
+O projeto já possui duas marcas visuais estabelecidas que precisam ser integradas. Seguem as mudanças necessárias:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. MUDANÇAS NA PALETA DE CORES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SUBSTITUIR:
+❌ Cores peach/coral (#DAC8BA, #E8BBA3) como cores principais
+❌ Verde sage (#6A7C67) como cor principal de CTAs
+
+ADICIONAR:
+✅ Turquesa #6FB4B4 - Cor PRINCIPAL da marca pessoal
+✅ Amarelo #F5C518 - Cor do Instituto (usar APENAS na seção Instituto)
+
+APLICAR POR SEÇÃO:
+
+📍 SEÇÃO CLÍNICA:
+- Trocar TODOS os elementos interativos para turquesa #6FB4B4
+- CTAs: background #6FB4B4, texto branco
+- Borders de cards: rgba(111, 180, 180, 0.2)
+- Hover: #5A9999
+
+📍 SEÇÃO INSTITUTO:
+- Background da seção: #FFFEF5 (off-white com hint amarelo)
+- CTAs: background #F5C518, texto #2C2C2C (IMPORTANTE: texto escuro!)
+- Borders de cards: rgba(245, 197, 24, 0.3)
+- Hover: #D4A500
+- ADICIONAR: Logo do Instituto em destaque (instituto-logo-amarelo.png)
+
+📍 SEÇÃO OBRAS:
+- Manter cores neutras: #DAC8BA para backgrounds, #6A7C67 para CTAs
+- NÃO usar turquesa nem amarelo aqui
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. INTEGRAÇÃO DAS LOGOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ADICIONAR:
+
+📍 HEADER/NAVEGAÇÃO:
+- Logo: fernanda-logo-turquesa.png
+- Tamanho: height 45px
+- Versão: simplificada (sem "PSICÓLOGA" se possível)
+- Posição: left aligned
+
+📍 HERO SECTION:
+- Logo: fernanda-logo-turquesa.png (versão completa)
+- Tamanho: max-width 400px
+- Posição: centralizada ou acima do H1
+
+📍 SEÇÃO INSTITUTO (CRÍTICO):
+- Logo: instituto-logo-amarelo.png
+- Tamanho: max-width 500px
+- Posição: DESTAQUE - centralizada acima ou dentro do card do Instituto
+- Esta é a ÚNICA seção que usa a logo amarela
+
+📍 FOOTER:
+- Logo: fernanda-logo-turquesa.png (simplificada)
+- Tamanho: height 40px
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. MUDANÇAS EM COMPONENTES ESPECÍFICOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BOTÕES:
+
+Clínica:
+background: #6FB4B4
+color: #FFFFFF
+hover-background: #5A9999
+
+Instituto:
+background: #F5C518
+color: #2C2C2C  ← IMPORTANTE: texto ESCURO para contraste
+hover-background: #D4A500
+
+Obras:
+background: #6A7C67
+color: #FFFFFF
+hover-background: #5A6B57
+
+CARDS:
+
+Clínica:
+border: 1px solid rgba(111, 180, 180, 0.2)
+hover-border: rgba(111, 180, 180, 0.4)
+
+Instituto:
+background: #FFFEF5  ← mudar de branco para este tom
+border: 2px solid rgba(245, 197, 24, 0.3)
+hover-border: rgba(245, 197, 24, 0.5)
++ ADICIONAR logo do Instituto no topo do card
+
+Obras:
+border: 1px solid rgba(218, 200, 186, 0.3)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. CHECKLIST DE IMPLEMENTAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] Substituir cores dos CTAs da seção Clínica para turquesa
+[ ] Substituir cores dos CTAs da seção Instituto para amarelo COM TEXTO ESCURO
+[ ] Adicionar logo turquesa no header
+[ ] Adicionar logo turquesa no hero
+[ ] Adicionar logo amarela na seção Instituto (bem destacada)
+[ ] Mudar background da seção Instituto para #FFFEF5
+[ ] Atualizar borders dos cards conforme a seção
+[ ] Atualizar hover states com as novas cores
+[ ] Adicionar logo turquesa no footer
+[ ] Manter seção Obras com cores neutras (sem turquesa/amarelo)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. CONTRASTE E ACESSIBILIDADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CRÍTICO:
+- Amarelo #F5C518 SEMPRE com texto #2C2C2C (nunca branco)
+- Turquesa #6FB4B4 SEMPRE com texto #FFFFFF
+- Testar contraste WCAG AA em todos os botões
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Implemente essas mudanças mantendo todo o resto da estrutura, tipografia, espaçamentos e animações conforme já está. O design.json completo atualizado foi anexado.

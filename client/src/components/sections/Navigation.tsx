@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +35,7 @@ export function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm py-4"
+          ? "bg-[#FFFAFA]/95 backdrop-blur-md shadow-sm py-2 border-b border-primary/10"
           : "bg-transparent py-6"
       )}
     >
@@ -45,9 +43,16 @@ export function Navigation() {
         <a 
           href="#" 
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-          className="font-display text-xl md:text-2xl text-primary font-medium tracking-tight"
+          className="flex items-center gap-3"
         >
-          Fernanda do Valle Pessoa
+          {/* Logo container with strict height constraint */}
+          <div className="h-12 w-auto overflow-hidden">
+             <img 
+               src="/images/fernanda-logo-turquesa.jpg" 
+               alt="fv Fernanda do Valle" 
+               className="h-full w-auto object-contain mix-blend-multiply"
+             />
+          </div>
         </a>
 
         {/* Desktop Menu */}
@@ -74,7 +79,7 @@ export function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg py-4 flex flex-col items-center space-y-4 animate-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#FFFAFA] border-b border-border shadow-lg py-4 flex flex-col items-center space-y-4 animate-in slide-in-from-top-5">
           {navLinks.map((link) => (
             <button
               key={link.name}

@@ -37,37 +37,42 @@
 
 :root {
   /* 
-    Palette:
+    Updated Palette v2.0:
     Background: #FFFAFA -> 0 100% 99%
-    Peach Light: #DAC8BA -> 26 29% 79%
-    Coral: #E8BBA3 -> 21 58% 77%
-    Sage Green: #6A7C67 -> 111 10% 45%
-    Beige Cream: #E6CBA8 -> 34 53% 78%
-    Deep Taupe: #8C7B75 -> 16 10% 50%
+    
+    Brand Turquoise (Fernanda/Clinic): #6FB4B4 -> 180 34% 57%
+    Brand Yellow (Institute): #F5C518 -> 47 90% 53%
+    
+    Accent Warm (Peach/Neutral): #DAC8BA -> 26 29% 79%
+    Accent Neutral (Sage): #6A7C67 -> 111 10% 45%
+    
     Text Primary: #2C2C2C -> 0 0% 17%
   */
 
   --background: 0 100% 99%; /* #FFFAFA */
   --foreground: 0 0% 17%; /* #2C2C2C */
 
-  --primary: 111 10% 45%; /* #6A7C67 Sage Green */
+  /* Primary is now Turquoise #6FB4B4 */
+  --primary: 180 34% 57%; 
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 26 29% 79%; /* #DAC8BA Peach Light */
-  --secondary-foreground: 16 10% 30%;
+  /* Secondary is now Yellow #F5C518 (Institute) */
+  --secondary: 47 90% 53%;
+  --secondary-foreground: 0 0% 17%; /* Dark text on yellow */
 
-  --accent: 21 58% 77%; /* #E8BBA3 Coral */
+  /* Accent is Warm Peach #DAC8BA */
+  --accent: 26 29% 79%; 
   --accent-foreground: 16 10% 30%;
 
-  --muted: 34 53% 90%; /* Very light beige */
+  --muted: 34 53% 90%; 
   --muted-foreground: 16 10% 50%; /* #8C7B75 Deep Taupe */
 
   --card: 0 0% 100%;
   --card-foreground: 0 0% 17%;
 
-  --border: 26 29% 90%;
-  --input: 26 29% 90%;
-  --ring: 111 10% 45%;
+  --border: 180 20% 90%;
+  --input: 180 20% 90%;
+  --ring: 180 34% 57%;
 
   --radius: 0.5rem;
 }

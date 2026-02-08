@@ -8,10 +8,10 @@ export function Presentation() {
           
           {/* Image Side */}
           <div className="relative group animate-in slide-in-from-left-10 duration-1000 order-first md:order-last">
-            <div className="absolute -inset-4 bg-secondary/20 rounded-full blur-2xl group-hover:bg-secondary/30 transition-all duration-500" />
+            <div className="absolute -inset-4 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500" />
             <div className="relative rounded-full overflow-hidden border-4 border-white shadow-2xl max-w-md mx-auto aspect-square">
               <img 
-                src="/images/portrait-main.jpg" 
+                src="/images/portrait-smiling.jpg" 
                 alt="Fernanda do Valle Pessoa, psicóloga clínica"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -24,7 +24,7 @@ export function Presentation() {
               Fernanda do Valle Pessoa
             </h2>
             
-            <p className="font-sans text-sm md:text-base font-semibold text-muted-foreground uppercase tracking-widest">
+            <p className="font-sans text-sm md:text-base font-semibold text-muted-foreground uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
               Psicóloga clínica (CRP 20/03477)
             </p>
             
@@ -40,10 +40,16 @@ export function Presentation() {
               </p>
             </div>
 
-            <div className="pt-4">
-              <p className="font-script text-3xl text-accent md:ml-4 rotate-[-2deg]">
-                Fernanda do Valle
-              </p>
+            <div className="pt-4 flex justify-center md:justify-start">
+               {/* Using image signature/logo element instead of text font */}
+               <div className="h-16 w-auto opacity-80">
+                  <img 
+                    src="/images/fernanda-logo-turquesa.jpg" 
+                    alt="Fernanda do Valle" 
+                    className="h-full w-auto object-contain mix-blend-multiply" 
+                    style={{ objectPosition: 'left' }}
+                  />
+               </div>
             </div>
           </div>
           
