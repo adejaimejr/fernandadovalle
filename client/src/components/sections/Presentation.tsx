@@ -75,12 +75,6 @@ export function Presentation() {
                 Clínica, Instituto e obras não são frentes isoladas, são camadas integradas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.
               </p>
             </div>
-
-            <div className="pt-6 flex flex-wrap gap-3">
-              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Terapia Cognitivo-Comportamental</span>
-              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Psicologia Positiva (UPenn)</span>
-              <span className="bg-[#FFFAFA] px-5 py-2.5 rounded-full text-sm font-medium text-[#8C7B75] shadow-sm border border-[#8C7B75]/10">Resiliência (Harvard)</span>
-            </div>
           </motion.div>
           
         </div>
