@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,15 +19,20 @@ export function Navigation() {
     setIsMobileMenuOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
   const navLinks = [
-    { name: "Clínica", id: "clinica" },
-    { name: "Instituto", id: "instituto" },
-    { name: "Obras", id: "obras" },
-    { name: "Formação", id: "formacao" },
+    { name: "Sobre", id: "formacao" },
+    {
+      name: "Psicologia sob medida",
+      children: [
+        { name: "Clínica", id: "clinica" },
+        { name: "Instituto", id: "instituto" },
+        { name: "Obras", id: "obras" },
+      ]
+    },
     { name: "Contato", id: "contato" },
   ];
 
@@ -58,13 +64,35 @@ export function Navigation() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => scrollToSection(link.id)}
-              className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider"
-            >
-              {link.name}
-            </button>
+            link.children ? (
+              <div key={link.name} className="relative group">
+                <button className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider py-2">
+                  {link.name}
+                  <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
+                </button>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+                   <div className="bg-white rounded-lg shadow-xl border border-border/50 p-2 min-w-[180px] flex flex-col gap-1">
+                      {link.children.map((child) => (
+                        <button
+                          key={child.name}
+                          onClick={() => scrollToSection(child.id)}
+                          className="text-left px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 rounded-md transition-colors font-medium uppercase tracking-wide whitespace-nowrap"
+                        >
+                          {child.name}
+                        </button>
+                      ))}
+                   </div>
+                </div>
+              </div>
+            ) : (
+              <button
+                key={link.name}
+                onClick={() => scrollToSection(link.id)}
+                className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider"
+              >
+                {link.name}
+              </button>
+            )
           ))}
         </div>
 
@@ -79,15 +107,41 @@ export function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#FFFAFA] border-b border-border shadow-lg py-4 flex flex-col items-center space-y-4 animate-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#FFFAFA] border-b border-border shadow-lg py-4 flex flex-col items-center space-y-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => scrollToSection(link.id)}
-              className="text-muted-foreground hover:text-primary transition-colors text-lg font-medium"
-            >
-              {link.name}
-            </button>
+             link.children ? (
+              <div key={link.name} className="flex flex-col items-center w-full">
+                <button 
+                  onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-lg font-medium py-2"
+                >
+                  {link.name}
+                  <ChevronDown size={16} className={cn("transition-transform duration-300", mobileDropdownOpen ? "rotate-180" : "")} />
+                </button>
+                
+                {mobileDropdownOpen && (
+                  <div className="flex flex-col items-center gap-3 py-2 bg-muted/30 w-full animate-in slide-in-from-top-2">
+                    {link.children.map((child) => (
+                      <button
+                        key={child.name}
+                        onClick={() => scrollToSection(child.id)}
+                        className="text-muted-foreground hover:text-primary transition-colors text-base font-medium"
+                      >
+                        {child.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+             ) : (
+              <button
+                key={link.name}
+                onClick={() => scrollToSection(link.id)}
+                className="text-muted-foreground hover:text-primary transition-colors text-lg font-medium py-2"
+              >
+                {link.name}
+              </button>
+             )
           ))}
         </div>
       )}
