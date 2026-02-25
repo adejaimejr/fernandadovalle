@@ -110,6 +110,15 @@ export function ThreeLayers() {
                 <div className="mt-auto">
                    <Button 
                     variant="ghost" 
+                    onClick={() => {
+                      const messages: Record<string, string> = {
+                        clinica: "Olá, Dra. Fernanda! Gostaria de saber mais sobre a Psicoterapia Individual e agendar uma sessão.",
+                        instituto: "Olá, Dra. Fernanda! Gostaria de conhecer mais sobre os projetos do Instituto IPPAM.",
+                        obras: "Olá, Dra. Fernanda! Gostaria de saber mais sobre os seus livros e obras publicadas."
+                      };
+                      const msg = messages[layer.id as keyof typeof messages] || "Olá, Dra. Fernanda!";
+                      window.open(`https://wa.me/5592981302000?text=${encodeURIComponent(msg)}`, '_blank');
+                    }}
                     className={cn("pl-0 hover:bg-transparent text-sm font-bold group/btn transition-colors h-auto py-0 uppercase tracking-wide", layer.textColor)}
                   >
                     {layer.cta} 

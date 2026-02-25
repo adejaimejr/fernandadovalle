@@ -145,7 +145,7 @@ export function FinalCTA() {
 
                 <div className="mt-12 text-center">
                   <Button 
-                    onClick={() => scrollToSection("contato")}
+                    onClick={() => window.open('https://wa.me/5592981302000?text=Olá, Dra. Fernanda! Gostaria de saber mais sobre a Psicoterapia Individual e agendar uma sessão.', '_blank')}
                     className="bg-[#6FB4B4] hover:bg-[#5A9999] text-white rounded-full px-10 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
                   >
                     Agendar Sessão
@@ -194,7 +194,7 @@ export function FinalCTA() {
 
                 <div className="mt-12 text-center">
                   <Button 
-                    onClick={() => scrollToSection("contato")}
+                    onClick={() => window.open('https://wa.me/5592981302000?text=Olá, Dra. Fernanda! Gostaria de conhecer mais sobre os projetos do Instituto IPPAM.', '_blank')}
                     className="bg-[#F5C518] hover:bg-[#D4A500] text-[#333333] font-medium rounded-full px-10 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
                   >
                     Conhecer Projetos
@@ -229,7 +229,7 @@ export function FinalCTA() {
                 </p>
                 
                 <Button 
-                  onClick={() => scrollToSection("contato")}
+                  onClick={() => window.open('https://wa.me/5592981302000?text=Olá, Dra. Fernanda! Gostaria de saber mais sobre os seus livros e obras publicadas.', '_blank')}
                   className="bg-[#6A7C67] hover:bg-[#5A6B57] text-white rounded-full px-10 py-6 text-lg shadow-lg hover:shadow-xl transition-all group"
                 >
                   Explorar as Obras

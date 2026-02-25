@@ -25,6 +25,7 @@ export function Navigation() {
 
   const navLinks = [
     { name: "Sobre", id: "sobre" },
+    { name: "Abordagem Integrada", id: "camadas" },
     {
       name: "Psicologia sob medida",
       children: [
