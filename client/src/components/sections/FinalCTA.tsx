@@ -44,7 +44,7 @@ export function FinalCTA() {
             </Button>
           </div>
           
-          <div className="lg:col-span-8 space-y-10">
+          <div className="lg:col-span-8 space-y-12">
             {[
               { title: "Entrevista inicial", desc: "Realização da anamnese, compreensão da história pregressa e atual, e definição conjunta dos objetivos terapêuticos." },
               { title: "Análise de documentos", desc: "Leitura de laudos e avaliações psicológicas/psiquiátricas prévias, além de exames clínicos, encaminhamentos e informações multiprofissionais relevantes." },
@@ -53,11 +53,19 @@ export function FinalCTA() {
               { title: "Início do acompanhamento", desc: "Condução das sessões com intervenções baseadas em evidências, acompanhamento do progresso e ajustes conforme evolução e demanda." },
               { title: "Monitoramento e alta", desc: "Reavaliação periódica de metas, planejamento de sessões de monitoramento e construção do plano de alta, com foco em autonomia e manutenção dos ganhos." }
             ].map((step, i) => (
-              <div key={i} className="flex gap-6 group">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border flex items-center justify-center text-sm font-display text-muted-foreground group-hover:border-[#6FB4B4] group-hover:text-[#6FB4B4] transition-colors mt-1">
+              <div key={i} className="flex gap-6 group relative">
+                {/* Connecting Line */}
+                {i !== 5 && (
+                  <div className="absolute left-[15px] top-10 bottom-[-40px] w-[2px] bg-border/40 group-hover:bg-[#6FB4B4]/20 transition-colors" />
+                )}
+                
+                {/* Step Number Circle */}
+                <div className="relative z-10 flex-shrink-0 w-8 h-8 rounded-full bg-background border border-[#6FB4B4]/30 flex items-center justify-center text-sm font-display text-[#6FB4B4] shadow-sm group-hover:bg-[#6FB4B4] group-hover:text-white group-hover:border-[#6FB4B4] transition-all duration-300 mt-1">
                   {i + 1}
                 </div>
-                <div className="space-y-2">
+                
+                {/* Content */}
+                <div className="space-y-2 pt-1 pb-4">
                   <h4 className="text-xl font-display text-primary">{step.title}</h4>
                   <p className="text-muted-foreground font-light leading-relaxed">{step.desc}</p>
                 </div>
@@ -115,7 +123,7 @@ export function FinalCTA() {
             </p>
             <Button 
               variant="outline"
-              onClick={() => window.open('https://linktr.ee/fernandadovalle', '_blank')}
+              onClick={() => scrollToSection("contato")}
               className="text-[#6A7C67] border-[#6A7C67]/30 hover:bg-[#6A7C67]/5 hover:text-[#6A7C67] rounded-full px-8 py-6 w-full sm:w-auto text-base group"
             >
               Explorar Obras <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
