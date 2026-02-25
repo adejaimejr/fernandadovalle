@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -45,18 +45,17 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center lg:justify-start pb-4 md:pb-0"
             >
-              <Button 
-                onClick={() => scrollToSection("clinica")}
-                className="bg-primary hover:bg-[#5A9999] text-white rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-primary/20 transition-all duration-300 w-full sm:w-auto"
+              <button 
+                onClick={() => scrollToSection("camadas")}
+                className="group flex flex-col items-center justify-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300 mt-8"
               >
-                Agendar Conversa
-              </Button>
-              <Button 
-                onClick={() => scrollToSection("instituto")}
-                className="bg-[#F5C518] hover:bg-[#D4A500] text-secondary-foreground rounded-full px-6 py-5 md:py-6 text-sm md:text-base shadow-lg hover:shadow-secondary/20 transition-all duration-300 w-full sm:w-auto"
-              >
-                Conhecer o Instituto
-              </Button>
+                <span className="text-sm font-medium tracking-widest uppercase opacity-70 group-hover:opacity-100">
+                  Descubra Mais
+                </span>
+                <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
+                  <ArrowDown className="w-4 h-4 animate-bounce" />
+                </div>
+              </button>
             </motion.div>
           </div>
 
