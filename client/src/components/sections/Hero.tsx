@@ -27,7 +27,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-2 md:space-y-6"
+              className="space-y-2 md:space-y-6 pb-8 md:pb-0"
             >
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-display text-primary leading-[1.1]">
                 Psicologia <br className="hidden lg:block" />
@@ -37,25 +37,6 @@ export function Hero() {
               <p className="text-sm md:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 font-light px-2 md:px-0">
                 Clínica, conhecimento e escuta. Um espaço onde o cuidado não é padronizado, mas construído a partir do seu tempo e da sua história.
               </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center lg:justify-start pb-4 md:pb-0"
-            >
-              <button 
-                onClick={() => scrollToSection("camadas")}
-                className="group flex flex-col items-center justify-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300 mt-8"
-              >
-                <span className="text-sm font-medium tracking-widest uppercase opacity-70 group-hover:opacity-100">
-                  Descubra Mais
-                </span>
-                <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                  <ArrowDown className="w-4 h-4 animate-bounce" />
-                </div>
-              </button>
             </motion.div>
           </div>
 
