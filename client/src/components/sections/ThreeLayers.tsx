@@ -37,7 +37,7 @@ export function ThreeLayers() {
       label: "Camada 03",
       title: "Livros e Obras",
       subtitle: "Leitura e Reflexão",
-      description: "A escrita como gesto de cuidado. Obras que traduzem conceitos complexos da psicologia para uma linguagem acessível, permitindo que a informação de qualidade chegue a mais pessoas.",
+      description: "A escrita como gesto de cuidado:\n\nUma coletânea de contos, crônicas, poesias, ensaios e artigos em saúde mental, que transforma conceitos complexos da psicologia em uma linguagem acessível e acolhedora",
       cta: "Explorar Obras",
       image: "/images/fernanda-books-leaning.webp",
       color: "bg-[#6A7C67]",
@@ -103,7 +103,7 @@ export function ThreeLayers() {
                 <h3 className="text-xl font-display text-primary mb-1">{layer.title}</h3>
                 <p className={cn("text-xs font-semibold mb-2", layer.textColor)}>{layer.subtitle}</p>
                 
-                <p className="text-muted-foreground leading-relaxed mb-3 text-sm flex-grow line-clamp-4">
+                <p className="text-muted-foreground leading-relaxed mb-3 text-sm flex-grow line-clamp-6 whitespace-pre-line">
                   {layer.description}
                 </p>
 
