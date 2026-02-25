@@ -23,7 +23,7 @@ export function ThreeLayers() {
       label: "Camada 02",
       title: "IPPAM",
       subtitle: "Instituto de Psicologia Positiva",
-      description: "Dedicado ao desenvolvimento de protocolos, materiais terapêuticos e projetos de prevenção. O Instituto amplia o cuidado para além da clínica, alcançando pessoas e instituições.",
+      description: "O IPPAM é um espaço dedicado à prevenção em saúde mental, à construção de habilidades socioemocionais e ao fortalecimento de forças psicológicas para o bem-estar.",
       cta: "Conhecer Projetos",
       image: "/images/institute-logo.webp",
       color: "bg-[#F5C518]",
