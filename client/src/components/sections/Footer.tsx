@@ -96,7 +96,7 @@ export function Footer() {
                   <div className="flex flex-col text-sm text-white/80">
                       <span className="text-xs text-white/40 uppercase mb-1">Horário de Atendimento</span>
                       <span>Seg - Sex: 09:00h às 18h</span>
-                      <span>Sáb: 09:00h às 14h</span>
+                      <span>Sáb: 09:00h às 12h</span>
                   </div>
                 </li>
               </ul>
