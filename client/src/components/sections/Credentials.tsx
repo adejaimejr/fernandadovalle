@@ -1,4 +1,4 @@
-import { BadgeCheck, GraduationCap, Award, BookOpen } from "lucide-react";
+import { BadgeCheck, GraduationCap, Award, BookOpen, Medal } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Credentials() {
@@ -19,9 +19,9 @@ export function Credentials() {
       desc: "Certificação em desenvolvimento de habilidades psicológicas positivas e resiliência."
     },
     {
-      icon: BadgeCheck,
-      title: "CRP 20/03477",
-      desc: "Registro ativo no Conselho Regional de Psicologia, garantindo prática ética."
+      icon: Medal,
+      title: "Reconhecimento Institucional",
+      desc: "Recebeu dois prêmios de Honra ao Mérito do Estado do Amazonas pelos serviços prestados à psicologia."
     }
   ];
 
