@@ -25,15 +25,7 @@ export function Navigation() {
 
   const navLinks = [
     { name: "Sobre", id: "sobre" },
-    { name: "Abordagem Integrada", id: "camadas" },
-    {
-      name: "Psicologia sob medida",
-      children: [
-        { name: "Clínica", id: "camadas" },
-        { name: "Instituto", id: "camadas" },
-        { name: "Obras", id: "camadas" },
-      ]
-    },
+    { name: "Psicologia sob medida", id: "camadas" },
     { name: "Formação", id: "formacao" },
     { name: "Contato", id: "contato" },
   ];
