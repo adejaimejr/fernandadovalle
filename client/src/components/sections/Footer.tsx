@@ -66,7 +66,7 @@ export function Footer() {
                     <WhatsAppLogo size={18} />
                   </div>
                   <a 
-                    href="https://wa.me/5592981302000" 
+                    href="https://wa.me/5592981302000?text=Olá, Dra. Fernanda! Vim através do site e gostaria de mais informações." 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex flex-col w-full"
