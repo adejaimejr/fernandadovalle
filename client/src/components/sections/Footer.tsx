@@ -65,28 +65,41 @@ export function Footer() {
                    <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
                     <WhatsAppLogo size={18} />
                   </div>
-                  <div className="flex flex-col">
+                  <a 
+                    href="https://wa.me/5592981302000" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex flex-col w-full"
+                  >
                       <span className="text-xs text-white/40 uppercase">WhatsApp</span>
                       <span className="font-medium">(92) 98130-2000</span>
-                  </div>
+                  </a>
                 </li>
                 <li className="flex items-center space-x-3 hover:text-[#6FB4B4] transition-colors cursor-pointer group">
                   <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
                      <Mail size={16} />
                   </div>
-                  <div className="flex flex-col">
+                  <a 
+                    href="mailto:fernanda@ippam.com.br" 
+                    className="flex flex-col w-full"
+                  >
                       <span className="text-xs text-white/40 uppercase">Email</span>
                       <span>fernanda@ippam.com.br</span>
-                  </div>
+                  </a>
                 </li>
                 <li className="flex items-center space-x-3 hover:text-[#6FB4B4] transition-colors cursor-pointer group">
                    <div className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#6FB4B4]/20 transition-colors">
                     <Instagram size={16} />
                   </div>
-                  <div className="flex flex-col overflow-hidden">
+                  <a 
+                    href="https://instagram.com/fernandadovallepessoa2" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex flex-col overflow-hidden w-full"
+                  >
                       <span className="text-xs text-white/40 uppercase">Instagram</span>
                       <span className="truncate text-sm">@fernandadovallepessoa2</span>
-                  </div>
+                  </a>
                 </li>
 
                 <li className="flex items-start space-x-3 group mt-3 pt-3 border-t border-white/5">
