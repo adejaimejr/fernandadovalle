@@ -114,7 +114,7 @@ export function Footer() {
 
              <div className="space-y-4">
                 <p className="text-white/80 text-sm leading-relaxed">
-                  Av. Jacira Reis, 5051 - Dom Pedro, Manaus - AM, 69033-008, Brasil
+                  Av. Jacira Reis, 5051 Sala 7, 2 andar mall vipe - Dom Pedro, Manaus - AM, 69033-008, Brasil
                 </p>
                 
                 <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-white/5 transition-all duration-500 hover:border-[#6FB4B4]/50">
