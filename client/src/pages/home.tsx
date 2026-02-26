@@ -1,10 +1,13 @@
+import { lazy, Suspense } from "react";
 import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
-import { Presentation } from "@/components/sections/Presentation";
-import { ThreeLayers } from "@/components/sections/ThreeLayers";
-import { Credentials } from "@/components/sections/Credentials";
-import { FinalCTA } from "@/components/sections/FinalCTA";
-import { Footer } from "@/components/sections/Footer";
+
+// Lazy load below-the-fold components
+const Presentation = lazy(() => import("@/components/sections/Presentation").then(m => ({ default: m.Presentation })));
+const ThreeLayers = lazy(() => import("@/components/sections/ThreeLayers").then(m => ({ default: m.ThreeLayers })));
+const Credentials = lazy(() => import("@/components/sections/Credentials").then(m => ({ default: m.Credentials })));
+const FinalCTA = lazy(() => import("@/components/sections/FinalCTA").then(m => ({ default: m.FinalCTA })));
+const Footer = lazy(() => import("@/components/sections/Footer").then(m => ({ default: m.Footer })));
 
 export default function Home() {
   return (
@@ -13,13 +16,23 @@ export default function Home() {
       
       <main>
         <Hero />
-        <Presentation />
-        <ThreeLayers />
-        <Credentials />
-        <FinalCTA />
+        <Suspense fallback={<div className="h-32" />}>
+          <Presentation />
+        </Suspense>
+        <Suspense fallback={<div className="h-32" />}>
+          <ThreeLayers />
+        </Suspense>
+        <Suspense fallback={<div className="h-32" />}>
+          <Credentials />
+        </Suspense>
+        <Suspense fallback={<div className="h-32" />}>
+          <FinalCTA />
+        </Suspense>
       </main>
 
-      <Footer />
+      <Suspense fallback={<div className="h-32" />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

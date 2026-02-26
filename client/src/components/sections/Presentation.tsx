@@ -27,9 +27,10 @@ export function Presentation() {
               {/* 2. The Main Image Container */}
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl bg-white">
                 <img 
-                  src="/images/fernanda-seated-black.jpg" 
+                  src="/images/fernanda-seated-black.webp" 
                   alt="Fernanda do Valle Pessoa"
                   className="w-full h-full object-cover object-top"
+                  loading="lazy"
                 />
                 
                 {/* 3. Refined Overlay - Subtle Dark Gradient for White Text */}

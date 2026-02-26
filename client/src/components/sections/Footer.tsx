@@ -48,6 +48,7 @@ export function Footer() {
                       src="/images/fernanda-footer.webp" 
                       alt="Fernanda do Valle" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                   />
               </div>
 

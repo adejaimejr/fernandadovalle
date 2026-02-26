@@ -80,6 +80,7 @@ export function ThreeLayers() {
                 <img 
                   src={layer.image} 
                   alt={layer.title} 
+                  loading="lazy"
                   className={cn(
                     "w-full h-full transition-transform duration-700",
                     layer.isLogo 
