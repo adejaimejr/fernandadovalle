@@ -28,7 +28,7 @@ export function Presentation() {
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl bg-white">
                 <img 
                   src="/images/fernanda-seated-black.webp" 
-                  alt="Fernanda do Valle Pessoa"
+                  alt="Fernanda do Valle Pessoa, psicóloga clínica em Manaus, em seu consultório"
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
                 />

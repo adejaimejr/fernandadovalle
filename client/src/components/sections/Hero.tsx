@@ -30,8 +30,8 @@ export function Hero() {
               className="space-y-2 md:space-y-6 pb-8 md:pb-0"
             >
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-display text-primary leading-[1.1]">
-                Psicologia <br className="hidden lg:block" />
-                <span className="italic text-secondary-foreground/80 font-light">sob medida</span>
+                Fernanda do Valle Pessoa <br className="hidden lg:block" />
+                <span className="italic text-secondary-foreground/80 font-light">Psicóloga em Manaus</span>
               </h1>
               
               <p className="text-sm md:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 font-light px-2 md:px-0">

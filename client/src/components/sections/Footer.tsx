@@ -46,7 +46,7 @@ export function Footer() {
               <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-[#6FB4B4]/30 shadow-lg">
                   <img 
                       src="/images/fernanda-footer.webp" 
-                      alt="Fernanda do Valle" 
+                      alt="Fernanda do Valle Pessoa, psicóloga clínica em Manaus" 
                       className="w-full h-full object-cover"
                       loading="lazy"
                   />

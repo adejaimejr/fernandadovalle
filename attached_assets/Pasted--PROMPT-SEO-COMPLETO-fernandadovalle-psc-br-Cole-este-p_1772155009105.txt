@@ -1,0 +1,536 @@
+# PROMPT SEO COMPLETO — fernandadovalle.psc.br
+## Cole este prompt inteiro no Replit Agent ANTES de fazer o deploy
+
+---
+
+O site fernandadovalle.psc.br é o site profissional da psicóloga **Fernanda do Valle Pessoa** (CRP 20/03477), de **Manaus/AM**. O site já está pronto no Replit (fernanda-design.replit.app) e agora vai ser feito o deploy para o domínio definitivo. ANTES do deploy, preciso que você implemente TODAS as otimizações de SEO abaixo para garantir que o site seja indexado corretamente pelo Google desde o primeiro dia.
+
+**Implemente tudo de uma vez, sem pular nenhum item.**
+
+---
+
+## 1. CRÍTICO — CONTEÚDO SEO NO HTML INICIAL (dentro da div#root)
+
+O site é uma SPA que carrega tudo via JavaScript. O Google precisa ler o conteúdo no HTML inicial. Coloque o seguinte conteúdo DIRETAMENTE dentro da `<div id="root">` no arquivo `index.html`. Quando o React/framework carregar, ele substitui automaticamente este conteúdo pelo app completo (hydration):
+
+```html
+<div id="root">
+  <header style="max-width:960px;margin:0 auto;padding:20px;font-family:system-ui,sans-serif;">
+    <h1 style="font-size:1.8rem;color:#1a1a2e;">Fernanda do Valle Pessoa — Psicóloga em Manaus | Psicologia sob Medida</h1>
+    <p style="color:#555;">Psicóloga Clínica | CRP 20/03477 | Escritora em Saúde Mental | Fundadora do IPPAM</p>
+    <nav style="margin-top:10px;">
+      <a href="#sobre" style="margin-right:15px;">Sobre</a>
+      <a href="#servicos" style="margin-right:15px;">Serviços</a>
+      <a href="#formacao" style="margin-right:15px;">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main style="max-width:960px;margin:0 auto;padding:20px;font-family:system-ui,sans-serif;">
+
+    <section id="hero">
+      <h2>Psicologia sob Medida — Clínica, Conhecimento e Escuta</h2>
+      <p>Um espaço onde o cuidado não é padronizado, mas construído a partir do seu tempo e da sua história. Fernanda do Valle Pessoa é psicóloga clínica em Manaus (CRP 20/03477), escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas (IPPAM).</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Fernanda do Valle Pessoa</h2>
+      <p>Psicóloga clínica (CRP 20/03477), escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas. Fundamentada em evidências científicas e com formações internacionais, ela construiu uma prática que não separa a técnica da humanidade.</p>
+      <p>Seja no consultório, na idealização de projetos educacionais ou na escrita de seus livros, o propósito é sempre o mesmo: oferecer um cuidado que respeite o tempo e a singularidade de cada história.</p>
+      <p>Clínica, Instituto e obras não são frentes isoladas — são camadas integradas de uma psicologia sob medida, que se adapta ao modo como cada pessoa pode e deseja cuidar de si.</p>
+    </section>
+
+    <section id="abordagem">
+      <h2>Abordagem Integrada — Três Camadas de Cuidado</h2>
+
+      <h3>Clínica Psicológica — Atendimento Individual</h3>
+      <p>Um espaço de escuta qualificada, onde Fernanda do Valle atua diretamente com psicoterapia para adolescentes e adultos em Manaus. O foco é a promoção da saúde mental e o cuidado personalizado.</p>
+
+      <h3>IPPAM — Instituto de Psicologia Positiva do Amazonas</h3>
+      <p>Espaço dedicado à prevenção em saúde mental, à construção de habilidades socioemocionais e ao fortalecimento de forças psicológicas para o bem-estar.</p>
+
+      <h3>Livros e Obras — Leitura e Reflexão</h3>
+      <p>A escrita como gesto de cuidado: uma coletânea de contos, crônicas, poesias, ensaios e artigos em saúde mental que transforma conceitos complexos da psicologia em linguagem acessível e acolhedora.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos Serviços de Psicoterapia em Manaus</h2>
+
+      <h3>Psicoterapia Individual</h3>
+      <p>Um espaço seguro de escuta onde o tratamento é construído a partir do seu tempo e da sua história.</p>
+      <ul>
+        <li><strong>Entrevista Inicial:</strong> Compreensão da história atual e definição conjunta dos objetivos terapêuticos.</li>
+        <li><strong>Análise e Planejamento:</strong> Leitura de avaliações e elaboração cuidadosa do plano de intervenção individualizado.</li>
+        <li><strong>Rede de Apoio:</strong> Integração de familiares para alinhamento (quando indicado), mantendo o sigilo.</li>
+        <li><strong>Desenvolvimento e Alta:</strong> Sessões baseadas em evidências com monitoramento constante até a construção da alta.</li>
+      </ul>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação e Certificações</h2>
+      <p>Prática baseada em ciência e evidências. Fernanda do Valle Pessoa é psicóloga clínica (CRP 20/03477), com formação sólida e certificações nacionais e internacionais na área da saúde mental.</p>
+      <ul>
+        <li><strong>Especialista em TCC:</strong> Formação voltada à avaliação psicológica, formulação de caso e intervenções clínicas eficazes.</li>
+        <li><strong>University of Pennsylvania:</strong> Especialização em Psicologia Positiva, com aprofundamento em bem-estar e forças de caráter.</li>
+        <li><strong>Harvard University:</strong> Certificação em desenvolvimento de habilidades psicológicas positivas e resiliência.</li>
+        <li><strong>Reconhecimento:</strong> Dois prêmios de Honra ao Mérito do Estado do Amazonas pelos serviços prestados à psicologia.</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Agende Sua Sessão — Psicóloga em Manaus</h2>
+      <p>Psicologia sob medida. Um olhar ético, científico e humano para cada necessidade.</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5592981302000">(92) 98130-2000</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:fernanda@ippam.com.br">fernanda@ippam.com.br</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/fernandadovallepessoa2/">@fernandadovallepessoa2</a></p>
+      <p><strong>Horário:</strong> Seg a Sex: 09h às 18h | Sáb: 09h às 12h</p>
+      <p><strong>Endereço:</strong> Av. Jacira Reis, 5051, Sala 7, 2º andar, Mall Vipe — Dom Pedro, Manaus/AM, CEP 69033-008</p>
+    </section>
+
+  </main>
+
+  <footer style="max-width:960px;margin:0 auto;padding:20px;font-family:system-ui,sans-serif;color:#777;font-size:0.9rem;">
+    <p>© 2026 Fernanda do Valle Pessoa — Psicóloga CRP 20/03477 | Manaus, AM. Criado por i92Tech.</p>
+  </footer>
+</div>
+```
+
+### REGRAS IMPORTANTES:
+- Ajuste as cores inline para combinar com a identidade visual do site
+- **NÃO** use `display:none`, `visibility:hidden`, `font-size:0` ou qualquer hidden text — Google penaliza
+- Este conteúdo é visível por frações de segundo antes do React carregar — o loading overlay (item 2) resolve isso visualmente
+- **NÃO** coloque este conteúdo dentro de `<noscript>` — Googlebot executa JavaScript e ignora noscript
+
+---
+
+## 2. LOADING OVERLAY (evitar flash de conteúdo sem estilo)
+
+Adicione LOGO APÓS a abertura do `<body>`, ANTES da div#root:
+
+```html
+<div id="loading-overlay" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease-out;
+">
+  <div style="text-align:center;">
+    <p style="color:rgba(255,255,255,0.5); font-family:system-ui,sans-serif; font-size:0.8rem; letter-spacing:4px; text-transform:uppercase; margin-bottom:6px;">fv</p>
+    <h2 style="color:#ffffff; font-family:'Playfair Display',Georgia,serif; font-size:1.8rem; margin:0 0 6px 0; letter-spacing:1px;">
+      Fernanda do Valle
+    </h2>
+    <p style="color:rgba(255,255,255,0.7); font-family:system-ui,sans-serif; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase;">
+      Psicóloga
+    </p>
+  </div>
+  <div style="margin-top:40px;">
+    <div style="
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-top: 3px solid #ffffff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    "></div>
+  </div>
+</div>
+
+<style>
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+```
+
+**Ajuste o `background-color: #1a1a2e`** para a cor de fundo principal do site (provavelmente algo escuro/elegante dado o design). Se tiver o logo "fv" como imagem SVG/PNG, substitua o `<p>fv</p>` por uma tag `<img>`.
+
+No arquivo de inicialização do React (main.tsx, main.jsx ou index.tsx), adicione APÓS o render/mount:
+
+```javascript
+const overlay = document.getElementById('loading-overlay');
+if (overlay) {
+  setTimeout(() => {
+    overlay.style.opacity = '0';
+    setTimeout(() => { overlay.remove(); }, 500);
+  }, 100);
+}
+```
+
+**Por que isso funciona:** O overlay tem `position:fixed` e `z-index:99999`, então cobre visualmente o conteúdo SEO da div#root. Mas o Google lê o HTML da página inteira — `position:fixed` NÃO esconde conteúdo dos crawlers. O usuário vê uma tela de carregamento elegante, o Google vê todo o conteúdo.
+
+---
+
+## 3. META TAGS NO HEAD
+
+Todas as tags abaixo DEVEM estar no HTML estático do `index.html`, **NÃO** injetadas por JavaScript. Verifique que nenhum script ou framework sobrescreve o `<title>`:
+
+```html
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Psicóloga em Manaus | Fernanda do Valle Pessoa — Psicologia sob Medida | CRP 20/03477</title>
+
+  <meta name="description" content="Fernanda do Valle Pessoa, psicóloga clínica em Manaus (CRP 20/03477). Psicoterapia individual para adolescentes e adultos, TCC, Psicologia Positiva. Formação pela University of Pennsylvania e Harvard. Fundadora do IPPAM. Agende sua sessão: (92) 98130-2000.">
+
+  <link rel="canonical" href="https://fernandadovalle.psc.br/">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Fernanda do Valle Pessoa">
+  <meta name="geo.region" content="BR-AM">
+  <meta name="geo.placename" content="Manaus">
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Preconnect para performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Fernanda do Valle Pessoa | Psicóloga em Manaus — Psicologia sob Medida">
+  <meta property="og:description" content="Psicóloga clínica em Manaus (CRP 20/03477). Psicoterapia individual, TCC, Psicologia Positiva. Fundadora do IPPAM. Formação pela UPenn e Harvard. Agende: (92) 98130-2000.">
+  <meta property="og:image" content="https://fernandadovalle.psc.br/og-image.jpg">
+  <meta property="og:url" content="https://fernandadovalle.psc.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Fernanda do Valle Pessoa — Psicóloga">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fernanda do Valle Pessoa | Psicóloga em Manaus">
+  <meta name="twitter:description" content="Psicologia sob Medida. Psicoterapia, TCC, Psicologia Positiva. CRP 20/03477. Agende: (92) 98130-2000.">
+  <meta name="twitter:image" content="https://fernandadovalle.psc.br/og-image.jpg">
+</head>
+```
+
+### IMAGEM OG (og-image.jpg)
+Crie uma imagem de **1200x630px** para compartilhamento no WhatsApp/redes sociais:
+- Fundo com a cor principal do site (#1a1a2e ou similar)
+- Foto da Fernanda (a mesma do hero)
+- Texto: "Fernanda do Valle Pessoa — Psicóloga" + "Psicologia sob Medida"
+- Logo "fv" no canto
+- Salve como `og-image.jpg` na pasta `public/`
+
+---
+
+## 4. SCHEMA MARKUP (JSON-LD)
+
+Adicione dentro do `<head>` do index.html:
+
+### Schema 1 — Psychologist (principal)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Psychologist",
+  "name": "Fernanda do Valle Pessoa",
+  "description": "Psicóloga clínica em Manaus (CRP 20/03477), escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas (IPPAM). Especialista em TCC com formações pela University of Pennsylvania e Harvard University.",
+  "url": "https://fernandadovalle.psc.br",
+  "telephone": "+5592981302000",
+  "email": "fernanda@ippam.com.br",
+  "image": "https://fernandadovalle.psc.br/foto-fernanda.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Jacira Reis, 5051, Sala 7, 2º andar, Mall Vipe - Dom Pedro",
+    "addressLocality": "Manaus",
+    "addressRegion": "AM",
+    "postalCode": "69033-008",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-3.0936",
+    "longitude": "-60.0253"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    }
+  ],
+  "priceRange": "$$",
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Pennsylvania",
+      "description": "Especialização em Psicologia Positiva"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Harvard University",
+      "description": "Certificação em habilidades psicológicas positivas e resiliência"
+    }
+  ],
+  "knowsAbout": [
+    "Psicoterapia Individual",
+    "Terapia Cognitivo-Comportamental (TCC)",
+    "Psicologia Positiva",
+    "Saúde Mental",
+    "Habilidades Socioemocionais",
+    "Avaliação Psicológica",
+    "Psicologia Clínica",
+    "Formulação de Caso",
+    "Intervenções Baseadas em Evidências"
+  ],
+  "award": [
+    "Honra ao Mérito do Estado do Amazonas pelos serviços prestados à psicologia",
+    "Honra ao Mérito do Estado do Amazonas pelos serviços prestados à psicologia (2ª premiação)"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/fernandadovallepessoa2/"
+  ],
+  "founder": {
+    "@type": "Organization",
+    "name": "IPPAM - Instituto de Psicologia Positiva do Amazonas",
+    "description": "Espaço dedicado à prevenção em saúde mental, construção de habilidades socioemocionais e fortalecimento de forças psicológicas"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Psicoterapia Individual",
+        "description": "Atendimento psicológico individual para adolescentes e adultos com foco em TCC, promoção da saúde mental e cuidado personalizado. Inclui entrevista inicial, planejamento individualizado, integração da rede de apoio e monitoramento até alta."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "IPPAM - Projetos em Psicologia Positiva",
+        "description": "Prevenção em saúde mental, habilidades socioemocionais e fortalecimento de forças psicológicas para o bem-estar"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Livros e Obras em Saúde Mental",
+        "description": "Coletânea de contos, crônicas, poesias, ensaios e artigos em saúde mental"
+      }
+    }
+  ]
+}
+</script>
+```
+
+### Schema 2 — WebSite
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Fernanda do Valle Pessoa — Psicóloga em Manaus",
+  "url": "https://fernandadovalle.psc.br"
+}
+</script>
+```
+
+**NOTA:** Confirme as coordenadas de latitude/longitude pesquisando "Av. Jacira Reis, 5051, Dom Pedro, Manaus" no Google Maps. As coordenadas acima são aproximadas.
+
+---
+
+## 5. ARQUIVOS TÉCNICOS
+
+### robots.txt
+Crie o arquivo `public/robots.txt`:
+
+```
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://fernandadovalle.psc.br/sitemap.xml
+```
+
+### sitemap.xml
+Crie o arquivo `public/sitemap.xml`. Ajuste as URLs conforme as rotas reais do site. Se for uma SPA de página única com âncoras (#sobre, #servicos, etc.), use apenas a URL da home:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fernandadovalle.psc.br/</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+```
+
+Se o site tem rotas separadas (ex: /sobre, /servicos, /formacao, /contato), adicione cada uma:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fernandadovalle.psc.br/</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fernandadovalle.psc.br/sobre</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fernandadovalle.psc.br/servicos</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fernandadovalle.psc.br/formacao</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fernandadovalle.psc.br/contato</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
+```
+
+Verifique qual versão se aplica ao seu site e use apenas essa.
+
+---
+
+## 6. REDIRECT 301 DO .replit.app
+
+Para evitar conteúdo duplicado, redirecione o domínio Replit para o oficial. No servidor (Express/backend):
+
+```javascript
+app.use((req, res, next) => {
+  const host = req.hostname || req.headers.host || '';
+  if (host.includes('replit.app') || host.includes('repl.co') || host.includes('replit.dev')) {
+    return res.redirect(301, `https://fernandadovalle.psc.br${req.originalUrl}`);
+  }
+  next();
+});
+```
+
+Se não houver acesso ao backend, garanta que a tag `<link rel="canonical">` aponte para `https://fernandadovalle.psc.br/` em todas as páginas.
+
+---
+
+## 7. ESTRUTURA HTML SEMÂNTICA
+
+Verifique e corrija no código do site:
+- **1 único `<h1>` por página** com a palavra-chave principal ("Fernanda do Valle Pessoa — Psicóloga em Manaus")
+- `<h2>` para cada seção principal (Sobre, Serviços, Formação, Contato)
+- `<h3>` para sub-itens (Clínica Psicológica, IPPAM, Livros e Obras)
+- **NÃO** pular níveis (ex: h1 → h3 sem h2)
+- Usar tags semânticas: `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<article>`
+- Substituir `<div>` genéricos por tags semânticas quando fizer sentido
+
+---
+
+## 8. IMAGENS E PERFORMANCE
+
+### Alt text em TODAS as imagens:
+- Foto da Fernanda sentada: `alt="Fernanda do Valle Pessoa, psicóloga clínica em Manaus, em seu consultório"`
+- Logo "fv": `alt="Logo Fernanda do Valle Pessoa Psicóloga"`
+- Ícones de serviço: `alt="Ícone psicoterapia individual"`, etc.
+- **NÃO** usar alt vazio, "imagem", "foto" ou alt genérico
+
+### Performance:
+- `loading="lazy"` em imagens abaixo da primeira dobra (below the fold)
+- Comprimir imagens (preferencialmente WebP, máx 200KB)
+- Definir `width` e `height` nas tags `<img>` (evita layout shift)
+- `defer` ou `async` em scripts não-críticos
+- Minificar CSS e JavaScript no build de produção
+
+---
+
+## 9. PALAVRAS-CHAVE PARA INTEGRAR NATURALMENTE NO CONTEÚDO
+
+Estas palavras devem aparecer naturalmente nos textos, títulos, alt text e meta tags. NÃO force — integre de forma fluida:
+
+**Primárias:**
+- "psicóloga em Manaus"
+- "psicóloga clínica Manaus"
+- "psicoterapia Manaus"
+- "Fernanda do Valle Pessoa psicóloga"
+
+**Secundárias:**
+- "terapia cognitivo-comportamental Manaus" / "TCC Manaus"
+- "psicologia positiva Manaus"
+- "atendimento psicológico Manaus"
+- "saúde mental Manaus"
+- "psicóloga adolescentes adultos Manaus"
+
+**Long-tail:**
+- "consultório psicologia Dom Pedro Manaus"
+- "IPPAM Instituto Psicologia Positiva Amazonas"
+- "psicóloga escritora saúde mental"
+- "psicóloga formação Harvard Penn Manaus"
+
+---
+
+## 10. LINKS E CTAs
+
+Todos os links de contato devem ser clicáveis:
+- Telefone: `<a href="tel:+5592981302000">(92) 98130-2000</a>`
+- WhatsApp: `<a href="https://wa.me/5592981302000" target="_blank" rel="noopener noreferrer" aria-label="Agendar sessão pelo WhatsApp">(92) 98130-2000</a>`
+- Email: `<a href="mailto:fernanda@ippam.com.br">fernanda@ippam.com.br</a>`
+- Instagram: `<a href="https://www.instagram.com/fernandadovallepessoa2/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">@fernandadovallepessoa2</a>`
+
+Os botões "Agendar Sessão" devem abrir o WhatsApp: `https://wa.me/5592981302000?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão.`
+
+---
+
+## 11. ACESSIBILIDADE
+
+- Site 100% responsivo (mobile, tablet, desktop)
+- Contraste de cores mínimo 4.5:1 para textos
+- Botões e links com área de toque mínima 44x44px em mobile
+- Formulários com `<label>` associados a `<input>`
+- `aria-label` em botões de ícone (WhatsApp, Instagram, menu mobile)
+- Página 404 personalizada com link de retorno à home
+
+---
+
+## 12. VERIFICAÇÃO FINAL — CHECKLIST
+
+Após implementar tudo, verifique cada item:
+
+- [ ] `curl -s https://fernandadovalle.psc.br | head -200` → mostra title, metas, schema E conteúdo completo (h1, h2, textos)
+- [ ] Desabilite JavaScript no DevTools → conteúdo SEO aparece normalmente
+- [ ] Loading overlay aparece e some suavemente ao carregar
+- [ ] `https://fernandadovalle.psc.br/robots.txt` → acessível e correto
+- [ ] `https://fernandadovalle.psc.br/sitemap.xml` → acessível e correto
+- [ ] SSL/HTTPS funcionando sem erros (cadeado verde)
+- [ ] `fernanda-design.replit.app` → redireciona 301 para fernandadovalle.psc.br OU canonical aponta para domínio oficial
+- [ ] Compartilhamento no WhatsApp mostra preview com imagem, título e descrição
+- [ ] Lighthouse no Chrome DevTools → scores > 90 em todas as categorias
+- [ ] Todas as imagens têm alt text descritivo
+- [ ] Todos os links de contato são clicáveis (tel:, wa.me, mailto:)
+- [ ] H1 único por página, hierarquia h1 > h2 > h3 correta
+- [ ] Nenhum texto escondido (display:none, visibility:hidden)
+
+**Faça o build de produção, deploy no domínio fernandadovalle.psc.br, e confirme cada item da checklist.**
