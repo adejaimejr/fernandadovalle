@@ -1,0 +1,214 @@
+# VERIFICAÇÃO E CORREÇÃO DO SEO — fernandadovalle.psc.br
+
+Preciso que você verifique se as otimizações de SEO foram implementadas corretamente. Execute os testes abaixo no terminal do Replit e corrija o que estiver faltando.
+
+---
+
+## TESTE 1 — HTML inicial visível para crawlers
+
+Execute no terminal:
+
+```bash
+curl -s https://fernanda-design.replit.app | head -200
+```
+
+O resultado DEVE conter TODOS estes itens:
+
+1. **Title correto:**
+```html
+<title>Psicóloga em Manaus | Fernanda do Valle Pessoa — Psicologia sob Medida | CRP 20/03477</title>
+```
+
+2. **Meta description:**
+```html
+<meta name="description" content="Fernanda do Valle Pessoa, psicóloga clínica em Manaus (CRP 20/03477)...">
+```
+
+3. **Canonical:**
+```html
+<link rel="canonical" href="https://fernandadovalle.psc.br/">
+```
+
+4. **Open Graph tags** (og:title, og:description, og:image, og:url)
+
+5. **Schema JSON-LD** com `"@type": "Psychologist"` e `"@type": "WebSite"`
+
+6. **Conteúdo real dentro da div#root** — deve aparecer o H1, H2, textos das seções (Sobre, Serviços, Formação, Contato) com parágrafos completos. NÃO pode ser apenas o título "Fernanda do Valle Pessoa | Psicologia sob Medida" sozinho.
+
+**Se o curl retornar apenas uma linha com o título ou HTML vazio dentro da div#root, o SEO NÃO ESTÁ FUNCIONANDO e precisa ser corrigido.**
+
+### Como corrigir se a div#root estiver vazia:
+
+Abra o arquivo `index.html` (na pasta public/ ou na raiz, dependendo do framework) e coloque conteúdo HTML estático diretamente dentro da `<div id="root">`:
+
+```html
+<div id="root">
+  <header style="max-width:960px;margin:0 auto;padding:20px;font-family:system-ui,sans-serif;">
+    <h1 style="font-size:1.8rem;color:#1a1a2e;">Fernanda do Valle Pessoa — Psicóloga em Manaus | Psicologia sob Medida</h1>
+    <p style="color:#555;">Psicóloga Clínica | CRP 20/03477 | Escritora em Saúde Mental | Fundadora do IPPAM</p>
+  </header>
+  <main style="max-width:960px;margin:0 auto;padding:20px;font-family:system-ui,sans-serif;">
+    <section>
+      <h2>Psicologia sob Medida — Clínica, Conhecimento e Escuta</h2>
+      <p>Um espaço onde o cuidado não é padronizado, mas construído a partir do seu tempo e da sua história. Fernanda do Valle Pessoa é psicóloga clínica em Manaus (CRP 20/03477), escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas (IPPAM).</p>
+    </section>
+    <section>
+      <h2>Sobre Fernanda do Valle Pessoa</h2>
+      <p>Psicóloga clínica (CRP 20/03477), escritora em saúde mental e fundadora do Instituto de Psicologia Positiva do Amazonas. Fundamentada em evidências científicas e com formações internacionais pela University of Pennsylvania e Harvard University. Recebeu dois prêmios de Honra ao Mérito do Estado do Amazonas pelos serviços prestados à psicologia.</p>
+    </section>
+    <section>
+      <h2>Serviços de Psicoterapia em Manaus</h2>
+      <h3>Psicoterapia Individual</h3>
+      <p>Atendimento psicológico individual para adolescentes e adultos com foco em TCC e promoção da saúde mental.</p>
+      <h3>IPPAM — Instituto de Psicologia Positiva do Amazonas</h3>
+      <p>Prevenção em saúde mental, habilidades socioemocionais e fortalecimento de forças psicológicas para o bem-estar.</p>
+      <h3>Livros e Obras</h3>
+      <p>Contos, crônicas, poesias, ensaios e artigos em saúde mental em linguagem acessível e acolhedora.</p>
+    </section>
+    <section>
+      <h2>Formação e Certificações</h2>
+      <p>Especialista em TCC. Especialização em Psicologia Positiva pela University of Pennsylvania. Certificação em habilidades psicológicas positivas e resiliência pela Harvard University.</p>
+    </section>
+    <section>
+      <h2>Contato — Agende Sua Sessão</h2>
+      <p>WhatsApp: <a href="https://wa.me/5592981302000">(92) 98130-2000</a></p>
+      <p>E-mail: <a href="mailto:fernanda@ippam.com.br">fernanda@ippam.com.br</a></p>
+      <p>Horário: Seg a Sex 09h-18h | Sáb 09h-12h</p>
+      <p>Endereço: Av. Jacira Reis, 5051, Sala 7, 2º andar, Mall Vipe — Dom Pedro, Manaus/AM, CEP 69033-008</p>
+    </section>
+  </main>
+</div>
+```
+
+Este conteúdo será automaticamente substituído pelo React/framework quando o JavaScript carregar (hydration). NÃO é hidden text — é conteúdo legítimo visível.
+
+---
+
+## TESTE 2 — Loading Overlay
+
+Execute no terminal:
+
+```bash
+curl -s https://fernanda-design.replit.app | grep -i "loading-overlay"
+```
+
+Deve retornar a div do loading overlay. Se não existir, adicione LOGO APÓS `<body>` e ANTES da `<div id="root">`:
+
+```html
+<div id="loading-overlay" style="position:fixed;top:0;left:0;width:100%;height:100%;background-color:#1a1a2e;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:99999;transition:opacity 0.5s ease-out;">
+  <div style="text-align:center;">
+    <p style="color:rgba(255,255,255,0.5);font-family:system-ui,sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:6px;">fv</p>
+    <h2 style="color:#fff;font-family:Georgia,serif;font-size:1.8rem;margin:0 0 6px 0;">Fernanda do Valle</h2>
+    <p style="color:rgba(255,255,255,0.7);font-family:system-ui,sans-serif;font-size:0.85rem;letter-spacing:3px;text-transform:uppercase;">Psicóloga</p>
+  </div>
+  <div style="margin-top:40px;"><div style="width:36px;height:36px;border:3px solid rgba(255,255,255,0.2);border-top:3px solid #fff;border-radius:50%;animation:spin 1s linear infinite;"></div></div>
+</div>
+<style>@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+```
+
+E no arquivo de inicialização do React (main.tsx/main.jsx), APÓS o render:
+
+```javascript
+const overlay = document.getElementById('loading-overlay');
+if (overlay) {
+  setTimeout(() => {
+    overlay.style.opacity = '0';
+    setTimeout(() => { overlay.remove(); }, 500);
+  }, 100);
+}
+```
+
+---
+
+## TESTE 3 — Title tag
+
+Execute:
+
+```bash
+curl -s https://fernanda-design.replit.app | grep -i "<title>"
+```
+
+Deve retornar exatamente:
+```
+<title>Psicóloga em Manaus | Fernanda do Valle Pessoa — Psicologia sob Medida | CRP 20/03477</title>
+```
+
+Se o title estiver diferente, verifique TODOS os locais que podem estar sobrescrevendo:
+- O `index.html` na pasta public/ (ou raiz)
+- Qualquer `document.title = "..."` no JavaScript
+- Qualquer componente React Helmet ou similar
+- Qualquer useEffect que altera o title
+- Qualquer configuração do bundler (Vite, Webpack)
+
+O title no `index.html` deve ser a fonte da verdade. Remova qualquer JavaScript que sobrescreva o title.
+
+---
+
+## TESTE 4 — Schema JSON-LD
+
+Execute:
+
+```bash
+curl -s https://fernanda-design.replit.app | grep -o 'application/ld+json' | wc -l
+```
+
+Deve retornar **2** (um schema Psychologist + um schema WebSite). Se retornar 0, os schemas não foram adicionados ao `<head>` do index.html.
+
+---
+
+## TESTE 5 — robots.txt e sitemap.xml
+
+Execute:
+
+```bash
+curl -s https://fernanda-design.replit.app/robots.txt
+```
+
+Deve retornar:
+```
+User-agent: *
+Allow: /
+Sitemap: https://fernandadovalle.psc.br/sitemap.xml
+```
+
+Execute:
+
+```bash
+curl -s https://fernanda-design.replit.app/sitemap.xml
+```
+
+Deve retornar XML válido com `<loc>https://fernandadovalle.psc.br/</loc>`.
+
+Se não existirem, crie os arquivos `robots.txt` e `sitemap.xml` na pasta `public/`.
+
+---
+
+## TESTE 6 — Verificação completa
+
+Execute tudo junto para um resumo rápido:
+
+```bash
+echo "=== TITLE ===" && curl -s https://fernanda-design.replit.app | grep -i "<title>" && echo "" && echo "=== META DESCRIPTION ===" && curl -s https://fernanda-design.replit.app | grep -i "meta name=\"description\"" && echo "" && echo "=== CANONICAL ===" && curl -s https://fernanda-design.replit.app | grep -i "canonical" && echo "" && echo "=== OG TAGS ===" && curl -s https://fernanda-design.replit.app | grep -i "og:" | head -5 && echo "" && echo "=== SCHEMA COUNT ===" && curl -s https://fernanda-design.replit.app | grep -o "application/ld+json" | wc -l && echo "" && echo "=== DIV ROOT CONTENT ===" && curl -s https://fernanda-design.replit.app | grep -o '<div id="root">[^<]*<' && echo "" && echo "=== LOADING OVERLAY ===" && curl -s https://fernanda-design.replit.app | grep -c "loading-overlay" && echo "" && echo "=== H1 TAG ===" && curl -s https://fernanda-design.replit.app | grep -i "<h1" && echo "" && echo "=== ROBOTS.TXT ===" && curl -s https://fernanda-design.replit.app/robots.txt | head -5 && echo "" && echo "=== SITEMAP ===" && curl -s https://fernanda-design.replit.app/sitemap.xml | head -10
+```
+
+### Resultado esperado:
+- TITLE: contém "Psicóloga em Manaus"
+- META DESCRIPTION: presente e completa
+- CANONICAL: aponta para fernandadovalle.psc.br
+- OG TAGS: pelo menos 4 linhas
+- SCHEMA COUNT: 2
+- DIV ROOT CONTENT: NÃO vazio (deve ter conteúdo após `<div id="root">`)
+- LOADING OVERLAY: 1 ou mais
+- H1 TAG: presente com "Fernanda do Valle Pessoa"
+- ROBOTS.TXT: conteúdo válido
+- SITEMAP: XML válido
+
+---
+
+## RESUMO
+
+Execute os 6 testes acima. Para cada item que falhar, aplique a correção indicada. Após corrigir, faça um novo build, deploy, e execute o TESTE 6 novamente para confirmar que tudo está OK.
+
+**O mais crítico é o TESTE 1** — se a div#root estiver vazia, o Google não vai indexar nenhum conteúdo do site.
+
+Cole o resultado do TESTE 6 para que eu possa verificar.
